@@ -186,6 +186,7 @@ function validJsonArguments(value: unknown): boolean {
   try {
     return isRecord(JSON.parse(value));
   } catch {
+    // no-effect: malformed arguments are rejected rather than accepted as valid tool output.
     return false;
   }
 }

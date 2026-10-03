@@ -113,6 +113,7 @@ async function computeEarliestSkippedRateLimitedUntil(
       }));
     return getEarliestRateLimitedUntil(accounts);
   } catch {
+    // no-effect: an unavailable cooldown hint leaves the normal retry policy in control.
     return null;
   }
 }

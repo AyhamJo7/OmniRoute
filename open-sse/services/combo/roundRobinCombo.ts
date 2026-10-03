@@ -879,9 +879,11 @@ export async function handleRoundRobinCombo({
                 retryAfter = errorBody?.retryAfter || null;
               }
             } catch {
+              // no-effect: retain the upstream failure and use remaining retry-hint sources.
               logRetryHintUnreadable(log, "COMBO-RR", modelStr, result.status, "unparseable body");
             }
           } catch {
+            // no-effect: retain the upstream failure when its body cannot be cloned.
             logRetryHintUnreadable(log, "COMBO-RR", modelStr, result.status, "clone failed");
           }
           retryAfter ||= readProseRetryAfter(bodyText); // #13672 opt-in prose hints
