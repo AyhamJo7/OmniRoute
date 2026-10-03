@@ -21,6 +21,7 @@ export async function resolveTargetTokenLimit(target: {
     const tpm = overrides?.tpm;
     return typeof tpm === "number" && tpm > 0 ? tpm : undefined;
   } catch {
+    // no-effect: leave the store's existing TPM limit unchanged on lookup failure.
     return undefined;
   }
 }
