@@ -148,20 +148,24 @@ export function hasForbiddenAgentToolChoice(body: Body, profile: AgentProfile): 
 
 const MAX_ANTHROPIC_CACHE_BOUNDARIES = 4;
 export function exceedsAgentCacheBoundaries(body: Body): boolean {
-  if (!("system" in body)) return false;
-  let count = 0;
-  function visit(value: unknown): void {
-    if (Array.isArray(value)) {
-      for (const child of value) visit(child);
-      return;
-    }
-    const object = record(value);
-    if (!object) return;
-    for (const [key, child] of Object.entries(object)) {
-      if (key === "cache_control") count += 1;
-      else visit(child);
-    }
+  // Only protocol blocks are breakpoints: tool schemas/inputs may legitimately
+  // contain a property named cache_control. Automatic caching reserves one slot.
+  let count = record(body.cache_control) ? 1 : 0;
+  const pending: unknown[] = [];
+  function addBlocks(value: unknown): void {
+    if (Array.isArray(value)) for (const block of value) pending.push(block);
   }
-  visit(body);
-  return count > MAX_ANTHROPIC_CACHE_BOUNDARIES;
+  addBlocks(body.system);
+  addBlocks(body.tools);
+  if (Array.isArray(body.messages)) {
+    for (const message of body.messages) addBlocks(record(message)?.content);
+  }
+  while (pending.length > 0) {
+    const block = record(pending.pop());
+    if (!block) continue;
+    if (block.cache_control !== undefined && block.cache_control !== null) count += 1;
+    if (count > MAX_ANTHROPIC_CACHE_BOUNDARIES) return true;
+    if (block.type === "tool_result") addBlocks(block.content);
+  }
+  return false;
 }

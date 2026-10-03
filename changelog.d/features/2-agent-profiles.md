@@ -1,0 +1,1 @@
+- **Agent profiles** — opt-in named roles backed by existing combos, authenticated management, safe client configuration exports, native prompt preservation and literal tool controls. Hidden owned aliases retain key and connection restrictions; profiles do not introduce a server-side multi-role scheduler. (#2)

@@ -1,6 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { prepareAgentRequestBody } from "../../../../src/lib/agent-profiles/request-body.ts";
+import {
+  prepareAgentRequestBody,
+  exceedsAgentCacheBoundaries,
+} from "../../../../src/lib/agent-profiles/request-body.ts";
 import {
   agentDefinitionSchema,
   type AgentProfile,
@@ -22,6 +25,45 @@ function profile(injection: AgentProfile["injection"] = "server"): AgentProfile 
     deletedAt: null,
   };
 }
+
+test("cache admission counts protocol markers without interpreting tool input/schema properties", () => {
+  const cached = { type: "text", text: "native", cache_control: { type: "ephemeral" } };
+  assert.equal(
+    exceedsAgentCacheBoundaries({ messages: [{ role: "user", content: Array(5).fill(cached) }] }),
+    true
+  );
+  assert.equal(exceedsAgentCacheBoundaries({ system: Array(4).fill(cached) }), false);
+  assert.equal(
+    exceedsAgentCacheBoundaries({
+      cache_control: { type: "ephemeral" },
+      system: Array(4).fill(cached),
+    }),
+    true
+  );
+  let schema: Record<string, unknown> = { cache_control: { type: "string" } };
+  for (let depth = 0; depth < 20_000; depth++) schema = { nested: schema };
+  assert.equal(
+    exceedsAgentCacheBoundaries({
+      system: Array(4).fill(cached),
+      tools: [{ name: "Read", input_schema: schema }],
+      messages: [
+        {
+          role: "assistant",
+          content: [{ type: "tool_use", input: { cache_control: "user data" } }],
+        },
+      ],
+    }),
+    false
+  );
+  assert.equal(
+    exceedsAgentCacheBoundaries({
+      messages: [
+        { role: "user", content: [{ type: "tool_result", content: Array(5).fill(cached) }] },
+      ],
+    }),
+    true
+  );
+});
 
 test("Anthropic injection retains four original cache boundaries and native tool instructions", () => {
   const inbound = {

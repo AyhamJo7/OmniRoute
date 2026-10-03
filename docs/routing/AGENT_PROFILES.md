@@ -64,6 +64,9 @@ and approved commands under its own workspace rules.
 Native Anthropic cache markers are retained. Profiles add no cache marker; requests
 with more than four markers are rejected before provider dispatch. This does not repair
 unrelated planner/executor or client compaction defects.
+The admission check counts protocol markers, including a top-level automatic cache
+slot, rather than similarly named fields inside tool inputs or schemas. See the
+[provider's prompt-cache limits](https://platform.claude.com/docs/en/build-with-claude/prompt-caching).
 
 ## Export, import and use
 
