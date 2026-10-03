@@ -11,7 +11,8 @@ const playwrightEnv = sanitizeColorEnv(process.env);
 delete playwrightEnv.NO_COLOR;
 delete playwrightEnv.FORCE_COLOR;
 
-const child = spawn(process.execPath, ["./node_modules/playwright/cli.js", ...args], {
+// Use the same package as spec imports; the standalone browser package may differ.
+const child = spawn(process.execPath, ["./node_modules/@playwright/test/cli.js", ...args], {
   stdio: "inherit",
   env: playwrightEnv,
 });
