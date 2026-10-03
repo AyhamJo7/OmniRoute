@@ -23,6 +23,16 @@ const profiles = await import("../../../../src/lib/db/agentProfiles.ts");
 const flags = await import("../../../../src/lib/db/featureFlags.ts");
 const { invalidateModelCatalogCache } = await import("../../../../src/lib/db/readCache.ts");
 const catalog = await import("../../../../src/app/api/v1/models/catalog.ts");
+// Pin the external worker catalog; live availability changes independently of this fork.
+const { aiHordeImageCatalog } =
+  await import("../../../../open-sse/services/aihordeImageCatalog.ts");
+const hordeFixture = fs.readFileSync(
+  path.join(root, "tests/fixtures/agent-profiles/v3851-horde-models.json"),
+  "utf8"
+);
+aiHordeImageCatalog.setFetch(
+  async () => new Response(hordeFixture, { headers: { "content-type": "application/json" } })
+);
 
 test.after(() => {
   Date.now = originalNow;
