@@ -21,7 +21,6 @@ env:
 
 jobs:
   quality:
-    if: github.repository == 'AyhamJo7/OmniRoute'
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
@@ -49,7 +48,6 @@ jobs:
           done
 
   unit:
-    if: github.repository == 'AyhamJo7/OmniRoute'
     runs-on: ubuntu-latest
     timeout-minutes: 90
     strategy:
@@ -72,7 +70,6 @@ jobs:
           TEST_SHARD: ${{ matrix.shard }}
 
   other-tests:
-    if: github.repository == 'AyhamJo7/OmniRoute'
     runs-on: ubuntu-latest
     timeout-minutes: 90
     strategy:
