@@ -279,6 +279,7 @@ export function AgentProfilesConsole() {
         <div className="flex items-center gap-3">
           <button
             className={buttonClass}
+            aria-label={c("previousPage")}
             disabled={offset === 0 || busy}
             onClick={() => setOffset(Math.max(0, offset - PAGE_SIZE))}
           >
@@ -289,6 +290,7 @@ export function AgentProfilesConsole() {
           </span>
           <button
             className={buttonClass}
+            aria-label={c("nextPage")}
             disabled={offset + PAGE_SIZE >= total || busy}
             onClick={() => setOffset(offset + PAGE_SIZE)}
           >
@@ -448,6 +450,7 @@ export function AgentProfilesConsole() {
             {sidebar("toolsGroup")}
             <input
               className={inputClass}
+              disabled={draft.toolAllowlist?.length === 0}
               value={draft.toolAllowlist?.join(", ") ?? ""}
               onChange={(event) =>
                 change(
@@ -461,6 +464,14 @@ export function AgentProfilesConsole() {
                 )
               }
             />
+          </label>
+          <label className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              checked={draft.toolAllowlist?.length === 0}
+              onChange={(event) => change("toolAllowlist", event.target.checked ? [] : null)}
+            />
+            {sidebar("toolsGroup")}: {c("none")}
           </label>
           <label>
             {usage("suiteBuilderCaseTagsLabel")}

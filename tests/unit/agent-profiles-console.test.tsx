@@ -81,6 +81,18 @@ async function loaded() {
 }
 
 describe("agent profile management", () => {
+  it("can deny all incoming tools without confusing an empty list with unrestricted tools", async () => {
+    await loaded();
+    fireEvent.click(screen.getByRole("button", { name: "edit" }));
+    fireEvent.click(screen.getByRole("checkbox", { name: "toolsGroup: none" }));
+    expect(screen.getByRole("textbox", { name: "toolsGroup" }).hasAttribute("disabled")).toBe(true);
+    fireEvent.click(screen.getByRole("button", { name: "save" }));
+    await waitFor(() =>
+      expect(requests.some((request) => request.init?.method === "PUT")).toBe(true)
+    );
+    const request = requests.find((request) => request.init?.method === "PUT");
+    expect(JSON.parse(String(request?.init?.body)).profile.toolAllowlist).toEqual([]);
+  });
   it("shows agent aliases and combo model chains as text, never HTML", async () => {
     await loaded();
     fireEvent.click(screen.getAllByRole("button", { name: "edit" })[0]);
