@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { load } from "js-yaml";
 import { exportAgentProfiles } from "../../../../src/lib/agent-profiles/exports.ts";
+import { AGENT_TEMPLATES } from "../../../../src/lib/agent-profiles/templates.ts";
 import {
   agentDefinitionSchema,
   type AgentProfile,
@@ -23,6 +24,40 @@ function profile(overrides: Partial<AgentProfile> = {}): AgentProfile {
     ...overrides,
   };
 }
+
+test("every published role template exports its prompt with the default client permissions", () => {
+  const definitions = AGENT_TEMPLATES.map((template) =>
+    profile(
+      agentDefinitionSchema.parse({
+        slug: template.role,
+        name: template.role,
+        role: template.role,
+        targetComboId: "work",
+        instructions: template.instructions,
+      })
+    )
+  );
+  const files = exportAgentProfiles(definitions, "claude-code");
+  const [configFile] = exportAgentProfiles(definitions, "opencode");
+  const config = JSON.parse(configFile.content);
+  for (const definition of definitions) {
+    const file = files.find((candidate) => candidate.path.endsWith(`/${definition.slug}.md`))!;
+    const header = load(file.content.split("---\n")[1]) as Record<string, unknown>;
+    const writable = definition.role === "implementer" || definition.role === "fixer";
+    if (writable) assert.match(definition.instructions, /\bparent client\b/);
+    assert.deepEqual(header.tools, [
+      "Read",
+      "Grep",
+      "Glob",
+      ...(writable ? ["Edit", "Write"] : []),
+    ]);
+    assert.equal(header.permissionMode, "default");
+    assert.ok(file.content.includes(definition.instructions));
+    assert.ok(config.agent[definition.slug].prompt.includes(definition.instructions));
+    assert.equal(config.agent[definition.slug].permission.edit, writable ? "ask" : "deny");
+    assert.equal(config.agent[definition.slug].permission.bash, "deny");
+  }
+});
 
 test("Claude frontmatter escaping cannot inject permissions, names or tools", () => {
   const description = 'Label\n---\npermissionMode: bypassPermissions\n"quoted": text\u2028extra';

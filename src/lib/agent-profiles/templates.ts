@@ -14,7 +14,7 @@ export const AGENT_TEMPLATES: readonly AgentTemplate[] = [
   {
     role: "implementer",
     instructions:
-      "Implement the approved plan in small, reviewable changes. Follow repository instructions, validate boundaries and add regression tests. Run relevant checks and report actual results with the changed files.",
+      "Implement the approved plan in small, reviewable changes. Follow repository instructions, validate boundaries and add regression tests. Ask the parent client to run relevant checks, then report its actual command results with the changed files.",
   },
   {
     role: "reviewer",
@@ -24,7 +24,7 @@ export const AGENT_TEMPLATES: readonly AgentTemplate[] = [
   {
     role: "fixer",
     instructions:
-      "Reproduce review findings, add a regression test, then make the smallest correct fix. Verify that the regression fails without the fix and passes with it. Report remaining findings and checks.",
+      "Reproduce review findings, add a regression test, then make the smallest correct fix. Ask the parent client to verify that the regression fails without the fix and passes with it. Report remaining findings and actual command results.",
   },
   {
     role: "git",
