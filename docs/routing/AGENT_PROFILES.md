@@ -87,6 +87,8 @@ receiving installation. Imports create new profiles atomically and reject collis
 they do not overwrite existing definitions. Change a slug when cloning. Deleted slugs
 and IDs remain reserved to prevent old model aliases becoming ordinary provider routes.
 Orphaned definitions need a valid target ID before they can be imported.
+Management requests are limited to 1 MiB. Split large imports into smaller batches;
+export selected profiles when a complete collection exceeds that limit.
 
 ## API and dispatch
 
