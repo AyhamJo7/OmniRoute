@@ -34,7 +34,9 @@ test("profiles gate the real dashboard, persist a role and preview client export
 
     await gotoDashboardRoute(page, "/dashboard/agent-profiles");
     await expect(
-      page.getByRole("main").getByRole("heading", { name: "Agents", exact: true })
+      page
+        .getByRole("heading", { name: "Agents", exact: true })
+        .and(page.locator("h1:not(header h1)"))
     ).toBeVisible();
     await page.getByRole("textbox", { name: "Name", exact: true }).fill("Browser Reviewer");
     await page.getByRole("textbox", { name: "agent/<slug>" }).fill(slug);
