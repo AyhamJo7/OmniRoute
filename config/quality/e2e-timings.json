@@ -4,6 +4,7 @@
   "a11y.spec.ts": 281,
   "agent-bridge-traffic-cross.spec.ts": 155,
   "agent-bridge.spec.ts": 160,
+  "agent-profiles.spec.ts": 97,
   "agent-skills-page.spec.ts": 205,
   "analytics-tabs.spec.ts": 334,
   "api-keys-flow.spec.ts": 643,
