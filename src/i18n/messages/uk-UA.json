@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Що GET /v1/models показує для цього ключа. Звуження списку ніколи не змінює того, які моделі може викликати ключ.",
     "catalogScopeAll": "Обидва",
     "catalogScopeCombos": "Лише комбінації",
-    "catalogScopeModels": "Лише моделі"
+    "catalogScopeModels": "Лише моделі",
+    "featureFlagAgentProfilesEnabledDescription": "Пов'яжіть ролі з наявними комбінаціями. Експортуйте агентів для інструментів вашого клієнта."
   },
   "contextRtk": {
     "title": "Двигун RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Партнерське посилання",
     "dismissAriaLabel": "Закрити"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Вимкнути створення варіантів рівня міркування (наприклад, -low, -medium, -high) у каталозі /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Вимкнути створення варіантів рівня міркування (наприклад, -low, -medium, -high) у каталозі /v1/models.",
+  "agentProfiles": {
+    "role": "Роль",
+    "planner": "Планувальник",
+    "implementer": "Виконавець",
+    "reviewer": "Рецензент",
+    "fixer": "Виправлювач",
+    "researcher": "Дослідник",
+    "custom": "Власний",
+    "client": "Клієнт",
+    "server": "Сервер",
+    "workspace": "Робоча область",
+    "help": "Пов'яжіть ролі з наявними комбінаціями. Експортуйте агентів для інструментів вашого клієнта."
+  }
 }

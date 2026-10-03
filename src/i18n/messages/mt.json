@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Dak li GET /v1/models jiddikjara għal din iċ-ċavetta. It-tidjiq tal-lista qatt ma jibdel dak li ċ-ċavetta tista' ssejjaħ.",
     "catalogScopeAll": "It-tnejn",
     "catalogScopeCombos": "Kombinazzjonijiet biss",
-    "catalogScopeModels": "Mudelli biss"
+    "catalogScopeModels": "Mudelli biss",
+    "featureFlagAgentProfilesEnabledDescription": "Qabbad ir-rwoli ma' kombinazzjonijiet eżistenti. Esporta aġenti għall-għodod tal-klijent tiegħek."
   },
   "contextRtk": {
     "title": "Magna RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Link tas-sieħeb",
     "dismissAriaLabel": "Agħlaq"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Itfi l-ġenerazzjoni ta’ varjanti tal-livell ta’ ħsieb (eż. -low, -medium, -high) fil-katalgu /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Itfi l-ġenerazzjoni ta’ varjanti tal-livell ta’ ħsieb (eż. -low, -medium, -high) fil-katalgu /v1/models.",
+  "agentProfiles": {
+    "role": "Rwol",
+    "planner": "Pjanifikatur",
+    "implementer": "Implimentatur",
+    "reviewer": "Reviżur",
+    "fixer": "Korrettur",
+    "researcher": "Riċerkatur",
+    "custom": "Personalizzat",
+    "client": "Klijent",
+    "server": "Server",
+    "workspace": "Spazju tax-xogħol",
+    "help": "Qabbad ir-rwoli ma' kombinazzjonijiet eżistenti. Esporta aġenti għall-għodod tal-klijent tiegħek."
+  }
 }

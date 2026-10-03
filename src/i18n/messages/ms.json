@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Perkara yang diiklankan oleh GET /v1/models untuk kunci ini. Mengecilkan senarai tidak akan mengubah perkara yang boleh dipanggil oleh kunci tersebut.",
     "catalogScopeAll": "Kedua-duanya",
     "catalogScopeCombos": "Kombo sahaja",
-    "catalogScopeModels": "Model sahaja"
+    "catalogScopeModels": "Model sahaja",
+    "featureFlagAgentProfilesEnabledDescription": "Hubungkan peranan kepada gabungan sedia ada. Eksport ejen untuk alat klien anda."
   },
   "contextRtk": {
     "title": "Enjin RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Pautan rakan kongsi",
     "dismissAriaLabel": "Tutup"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Lumpuhkan penjanaan varian tahap pemikiran (cth. -low, -medium, -high) dalam katalog /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Lumpuhkan penjanaan varian tahap pemikiran (cth. -low, -medium, -high) dalam katalog /v1/models.",
+  "agentProfiles": {
+    "role": "Peranan",
+    "planner": "Perancang",
+    "implementer": "Pelaksana",
+    "reviewer": "Penyemak",
+    "fixer": "Pembetul",
+    "researcher": "Penyelidik",
+    "custom": "Tersuai",
+    "client": "Klien",
+    "server": "Pelayan",
+    "workspace": "Ruang kerja",
+    "help": "Hubungkan peranan kepada gabungan sedia ada. Eksport ejen untuk alat klien anda."
+  }
 }

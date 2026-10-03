@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "यह कुंजी GET /v1/models में क्या दिखाती है। सूची को सीमित करने से यह कभी नहीं बदलता कि कुंजी किन्हें कॉल कर सकती है।",
     "catalogScopeAll": "दोनों",
     "catalogScopeCombos": "केवल कॉम्बो",
-    "catalogScopeModels": "केवल मॉडल"
+    "catalogScopeModels": "केवल मॉडल",
+    "featureFlagAgentProfilesEnabledDescription": "भूमिकाओं को मौजूदा कॉम्बो से जोड़ें। अपने क्लाइंट के टूल के लिए एजेंट निर्यात करें।"
   },
   "contextRtk": {
     "title": "RTK इंजन",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "पार्टनर लिंक",
     "dismissAriaLabel": "बंद करें"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models कैटलॉग में थिंकिंग लेवल वेरिएंट (जैसे -low, -medium, -high) के निर्माण को अक्षम करें।"
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models कैटलॉग में थिंकिंग लेवल वेरिएंट (जैसे -low, -medium, -high) के निर्माण को अक्षम करें।",
+  "agentProfiles": {
+    "role": "भूमिका",
+    "planner": "योजनाकार",
+    "implementer": "कार्यान्वयनकर्ता",
+    "reviewer": "समीक्षक",
+    "fixer": "सुधारक",
+    "researcher": "शोधकर्ता",
+    "custom": "कस्टम",
+    "client": "क्लाइंट",
+    "server": "सर्वर",
+    "workspace": "कार्यस्थान",
+    "help": "भूमिकाओं को मौजूदा कॉम्बो से जोड़ें। अपने क्लाइंट के टूल के लिए एजेंट निर्यात करें।"
+  }
 }

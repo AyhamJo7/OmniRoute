@@ -6,6 +6,7 @@
  */
 
 import { errorResponseWithComboDiagnostics } from "../utils/error.ts";
+import { prepareAgentDispatch } from "../../src/lib/agent-profiles/dispatch-guard";
 
 import { recordComboFailure } from "./combo/failureTracker.ts";
 import { buildRecoveryHint } from "./combo/pinRecovery.ts";
@@ -625,7 +626,11 @@ export async function handleComboChat(options: HandleComboChatOptions): Promise<
     (typeof comboInvocationId === "string" && comboInvocationId.length > 0
       ? comboInvocationId
       : createInvocationId());
-  const response = await handleComboChatInner({ ...options, invocationId: traceInvocationId });
+  const admission = await prepareAgentDispatch(options);
+  const attempted =
+    admission.rejection ??
+    (await handleComboChatInner({ ...admission.options, invocationId: traceInvocationId }));
+  const response = attempted.ok ? attempted : ((await admission.recheck()) ?? attempted);
   response.headers.set("X-OmniRoute-Combo-Trace", traceInvocationId);
   const trace = getComboTrace(traceInvocationId);
   options.log.info(

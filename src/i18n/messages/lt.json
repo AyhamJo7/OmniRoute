@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Ką GET /v1/models nurodo šiam raktui. Sąrašo susiaurinimas niekada nekeičia, ką raktas gali iškviesti.",
     "catalogScopeAll": "Abu",
     "catalogScopeCombos": "Tik deriniai",
-    "catalogScopeModels": "Tik modeliai"
+    "catalogScopeModels": "Tik modeliai",
+    "featureFlagAgentProfilesEnabledDescription": "Susiekite vaidmenis su esamais deriniais. Eksportuokite agentus savo kliento įrankiams."
   },
   "contextRtk": {
     "title": "RTK variklis",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Partnerio nuoroda",
     "dismissAriaLabel": "Uždaryti"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Išjungti mąstymo lygio variantų (pvz., -low, -medium, -high) generavimą /v1/models kataloge."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Išjungti mąstymo lygio variantų (pvz., -low, -medium, -high) generavimą /v1/models kataloge.",
+  "agentProfiles": {
+    "role": "Vaidmuo",
+    "planner": "Planuotojas",
+    "implementer": "Įgyvendintojas",
+    "reviewer": "Vertintojas",
+    "fixer": "Taisytojas",
+    "researcher": "Tyrėjas",
+    "custom": "Pasirinktinis",
+    "client": "Klientas",
+    "server": "Serveris",
+    "workspace": "Darbo sritis",
+    "help": "Susiekite vaidmenis su esamais deriniais. Eksportuokite agentus savo kliento įrankiams."
+  }
 }

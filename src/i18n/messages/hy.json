@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Ինչ է GET /v1/models-ը ցուցադրում այս բանալիի համար։ Ցանկի սահմանափակումը երբեք չի փոխում այն, թե ինչ կարող է կանչել բանալին։",
     "catalogScopeAll": "Երկուսն էլ",
     "catalogScopeCombos": "Միայն կոմբինացիաները",
-    "catalogScopeModels": "Միայն մոդելները"
+    "catalogScopeModels": "Միայն մոդելները",
+    "featureFlagAgentProfilesEnabledDescription": "Դերերը կապեք առկա համակցություններին։ Արտահանեք գործակալներին ձեր հաճախորդի գործիքների համար։"
   },
   "contextRtk": {
     "title": "RTK շարժիչ",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Գործընկերային հղում",
     "dismissAriaLabel": "Փակել"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Անջատել մտածողության մակարդակի տարբերակների (օր.՝ -low, -medium, -high) ստեղծումը /v1/models կատալոգում։"
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Անջատել մտածողության մակարդակի տարբերակների (օր.՝ -low, -medium, -high) ստեղծումը /v1/models կատալոգում։",
+  "agentProfiles": {
+    "role": "Դեր",
+    "planner": "Պլանավորող",
+    "implementer": "Իրականացնող",
+    "reviewer": "Վերանայող",
+    "fixer": "Ուղղող",
+    "researcher": "Հետազոտող",
+    "custom": "Անհատական",
+    "client": "Հաճախորդ",
+    "server": "Սերվեր",
+    "workspace": "Աշխատանքային տարածք",
+    "help": "Դերերը կապեք առկա համակցություններին։ Արտահանեք գործակալներին ձեր հաճախորդի գործիքների համար։"
+  }
 }

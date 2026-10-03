@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Vad GET /v1/models visar för denna nyckel. Att begränsa listan ändrar aldrig vad nyckeln kan anropa.",
     "catalogScopeAll": "Båda",
     "catalogScopeCombos": "Endast kombinationer",
-    "catalogScopeModels": "Endast modeller"
+    "catalogScopeModels": "Endast modeller",
+    "featureFlagAgentProfilesEnabledDescription": "Koppla roller till befintliga kombinationer. Exportera agenter för klientens verktyg."
   },
   "contextRtk": {
     "title": "RTK-motor",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Partnerlänk",
     "dismissAriaLabel": "Stäng"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Inaktivera genereringen av varianter med olika tankenivåer (t.ex. -low, -medium, -high) i katalogen /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Inaktivera genereringen av varianter med olika tankenivåer (t.ex. -low, -medium, -high) i katalogen /v1/models.",
+  "agentProfiles": {
+    "role": "Roll",
+    "planner": "Planerare",
+    "implementer": "Implementerare",
+    "reviewer": "Granskare",
+    "fixer": "Felrättare",
+    "researcher": "Forskare",
+    "custom": "Anpassad",
+    "client": "Klient",
+    "server": "Server",
+    "workspace": "Arbetsyta",
+    "help": "Koppla roller till befintliga kombinationer. Exportera agenter för klientens verktyg."
+  }
 }

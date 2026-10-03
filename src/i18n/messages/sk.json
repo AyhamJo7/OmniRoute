@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Čo GET /v1/models uvádza pre tento kľúč. Zúženie zoznamu nikdy nemení, čo môže kľúč volať.",
     "catalogScopeAll": "Oboje",
     "catalogScopeCombos": "Iba kombinácie",
-    "catalogScopeModels": "Iba modely"
+    "catalogScopeModels": "Iba modely",
+    "featureFlagAgentProfilesEnabledDescription": "Prepojte roly s existujúcimi kombináciami. Exportujte agentov pre nástroje svojho klienta."
   },
   "contextRtk": {
     "title": "RTK Engine",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Partnerský odkaz",
     "dismissAriaLabel": "Zavrieť"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Zakázať generovanie variantov úrovne uvažovania (napr. -low, -medium, -high) v katalógu /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Zakázať generovanie variantov úrovne uvažovania (napr. -low, -medium, -high) v katalógu /v1/models.",
+  "agentProfiles": {
+    "role": "Rola",
+    "planner": "Plánovač",
+    "implementer": "Implementátor",
+    "reviewer": "Recenzent",
+    "fixer": "Opravár",
+    "researcher": "Výskumník",
+    "custom": "Vlastné",
+    "client": "Klient",
+    "server": "Server",
+    "workspace": "Pracovný priestor",
+    "help": "Prepojte roly s existujúcimi kombináciami. Exportujte agentov pre nástroje svojho klienta."
+  }
 }

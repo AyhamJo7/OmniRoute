@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Hvad GET /v1/models viser for denne nøgle. En begrænsning af listen ændrer aldrig, hvad nøglen kan kalde.",
     "catalogScopeAll": "Begge",
     "catalogScopeCombos": "Kun kombinationer",
-    "catalogScopeModels": "Kun modeller"
+    "catalogScopeModels": "Kun modeller",
+    "featureFlagAgentProfilesEnabledDescription": "Knyt roller til eksisterende kombinationer. Eksportér agenter til din klients værktøjer."
   },
   "contextRtk": {
     "title": "RTK Engine",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Partnerlink",
     "dismissAriaLabel": "Luk"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Deaktivér genereringen af varianter af tænkeniveau (f.eks. -low, -medium, -high) i /v1/models-kataloget."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Deaktivér genereringen af varianter af tænkeniveau (f.eks. -low, -medium, -high) i /v1/models-kataloget.",
+  "agentProfiles": {
+    "role": "Rolle",
+    "planner": "Planlægger",
+    "implementer": "Implementør",
+    "reviewer": "Kontrollant",
+    "fixer": "Fejlretter",
+    "researcher": "Forsker",
+    "custom": "Tilpasset",
+    "client": "Klient",
+    "server": "Server",
+    "workspace": "Arbejdsområde",
+    "help": "Knyt roller til eksisterende kombinationer. Eksportér agenter til din klients værktøjer."
+  }
 }

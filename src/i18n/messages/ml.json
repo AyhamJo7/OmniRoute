@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "ഈ കീയ്ക്കായി GET /v1/models പ്രദർശിപ്പിക്കുന്നത്. ലിസ്റ്റ് ചുരുക്കുന്നത് കീയ്ക്ക് വിളിക്കാനാകുന്നവയെ ഒരിക്കലും മാറ്റില്ല.",
     "catalogScopeAll": "രണ്ടും",
     "catalogScopeCombos": "കോംബോകൾ മാത്രം",
-    "catalogScopeModels": "മോഡലുകൾ മാത്രം"
+    "catalogScopeModels": "മോഡലുകൾ മാത്രം",
+    "featureFlagAgentProfilesEnabledDescription": "പങ്കുകൾ നിലവിലുള്ള കോമ്പോകളുമായി ബന്ധിപ്പിക്കുക. നിങ്ങളുടെ ക്ലയന്റിന്റെ ഉപകരണങ്ങൾക്കായി ഏജന്റുകളെ കയറ്റുമതി ചെയ്യുക."
   },
   "contextRtk": {
     "title": "RTK എഞ്ചിൻ",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "പങ്കാളി ലിങ്ക്",
     "dismissAriaLabel": "അടയ്ക്കുക"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models കാറ്റലോഗിൽ ചിന്താതല വേരിയന്റുകൾ (ഉദാ. -low, -medium, -high) സൃഷ്ടിക്കുന്നത് പ്രവർത്തനരഹിതമാക്കുക."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models കാറ്റലോഗിൽ ചിന്താതല വേരിയന്റുകൾ (ഉദാ. -low, -medium, -high) സൃഷ്ടിക്കുന്നത് പ്രവർത്തനരഹിതമാക്കുക.",
+  "agentProfiles": {
+    "role": "പങ്ക്",
+    "planner": "ആസൂത്രകൻ",
+    "implementer": "നടപ്പാക്കുന്നയാൾ",
+    "reviewer": "അവലോകകൻ",
+    "fixer": "തിരുത്തുന്നയാൾ",
+    "researcher": "ഗവേഷകൻ",
+    "custom": "ഇഷ്ടാനുസൃതം",
+    "client": "ക്ലയന്റ്",
+    "server": "സെർവർ",
+    "workspace": "പ്രവർത്തനസ്ഥലം",
+    "help": "പങ്കുകൾ നിലവിലുള്ള കോമ്പോകളുമായി ബന്ധിപ്പിക്കുക. നിങ്ങളുടെ ക്ലയന്റിന്റെ ഉപകരണങ്ങൾക്കായി ഏജന്റുകളെ കയറ്റുമതി ചെയ്യുക."
+  }
 }

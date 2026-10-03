@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "GET /v1/models sorğusunun bu açar üçün göstərdiyi siyahı. Siyahının daraldılması açarın hansı modelləri çağıra biləcəyini heç vaxt dəyişmir.",
     "catalogScopeAll": "Hər ikisi",
     "catalogScopeCombos": "Yalnız kombinasiyalar",
-    "catalogScopeModels": "Yalnız modellər"
+    "catalogScopeModels": "Yalnız modellər",
+    "featureFlagAgentProfilesEnabledDescription": "Rolları mövcud kombinasiyalara bağlayın. Müştərinizin alətləri üçün agentləri ixrac edin."
   },
   "contextRtk": {
     "title": "RTK Mühərriki",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Tərəfdaş keçidi",
     "dismissAriaLabel": "Bağla"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models kataloqunda düşünmə səviyyəsi variantlarının (məsələn, -low, -medium, -high) yaradılmasını deaktiv edin."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models kataloqunda düşünmə səviyyəsi variantlarının (məsələn, -low, -medium, -high) yaradılmasını deaktiv edin.",
+  "agentProfiles": {
+    "role": "Rol",
+    "planner": "Planlaşdırıcı",
+    "implementer": "İcraçı",
+    "reviewer": "Rəyçi",
+    "fixer": "Düzəldici",
+    "researcher": "Tədqiqatçı",
+    "custom": "Fərdi",
+    "client": "Müştəri",
+    "server": "Server",
+    "workspace": "İş sahəsi",
+    "help": "Rolları mövcud kombinasiyalara bağlayın. Müştərinizin alətləri üçün agentləri ixrac edin."
+  }
 }

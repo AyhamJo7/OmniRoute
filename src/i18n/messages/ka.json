@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "რას აჩვენებს GET /v1/models ამ გასაღებისთვის. სიის შევიწროება არასოდეს ცვლის იმას, თუ რისი გამოძახება შეუძლია გასაღებს.",
     "catalogScopeAll": "ორივე",
     "catalogScopeCombos": "მხოლოდ კომბოები",
-    "catalogScopeModels": "მხოლოდ მოდელები"
+    "catalogScopeModels": "მხოლოდ მოდელები",
+    "featureFlagAgentProfilesEnabledDescription": "დააკავშირეთ როლები არსებულ კომბინაციებთან. გაიტანეთ აგენტები თქვენი კლიენტის ხელსაწყოებისთვის."
   },
   "contextRtk": {
     "title": "RTK ძრავა",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "პარტნიორის ბმული",
     "dismissAriaLabel": "დახურვა"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "გამორთეთ აზროვნების დონის ვარიანტების (მაგ. -low, -medium, -high) გენერირება /v1/models კატალოგში."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "გამორთეთ აზროვნების დონის ვარიანტების (მაგ. -low, -medium, -high) გენერირება /v1/models კატალოგში.",
+  "agentProfiles": {
+    "role": "როლი",
+    "planner": "დამგეგმავი",
+    "implementer": "შემსრულებელი",
+    "reviewer": "შემმოწმებელი",
+    "fixer": "შემსწორებელი",
+    "researcher": "მკვლევარი",
+    "custom": "მორგებული",
+    "client": "კლიენტი",
+    "server": "სერვერი",
+    "workspace": "სამუშაო სივრცე",
+    "help": "დააკავშირეთ როლები არსებულ კომბინაციებთან. გაიტანეთ აგენტები თქვენი კლიენტის ხელსაწყოებისთვის."
+  }
 }

@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "GET /v1/models ushbu kalit uchun nimalarni koʻrsatishi. Roʻyxatni qisqartirish kalit qaysi modellarni chaqira olishiga taʼsir qilmaydi.",
     "catalogScopeAll": "Ikkalasi ham",
     "catalogScopeCombos": "Faqat kombinatsiyalar",
-    "catalogScopeModels": "Faqat modellar"
+    "catalogScopeModels": "Faqat modellar",
+    "featureFlagAgentProfilesEnabledDescription": "Rollarni mavjud kombinatsiyalarga ulang. Mijozingiz vositalari uchun agentlarni eksport qiling."
   },
   "contextRtk": {
     "title": "RTK mexanizmi",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Hamkor havolasi",
     "dismissAriaLabel": "Yopish"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models katalogida fikrlash darajasi variantlarini (masalan, -low, -medium, -high) yaratishni o‘chirib qo‘ying."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models katalogida fikrlash darajasi variantlarini (masalan, -low, -medium, -high) yaratishni o‘chirib qo‘ying.",
+  "agentProfiles": {
+    "role": "Rol",
+    "planner": "Rejalashtiruvchi",
+    "implementer": "Ijrochi",
+    "reviewer": "Tekshiruvchi",
+    "fixer": "Tuzatuvchi",
+    "researcher": "Tadqiqotchi",
+    "custom": "Maxsus",
+    "client": "Mijoz",
+    "server": "Server",
+    "workspace": "Ish maydoni",
+    "help": "Rollarni mavjud kombinatsiyalarga ulang. Mijozingiz vositalari uchun agentlarni eksport qiling."
+  }
 }

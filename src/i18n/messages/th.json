@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "สิ่งที่ GET /v1/models แสดงสำหรับคีย์นี้ การจำกัดรายการให้แคบลงจะไม่เปลี่ยนแปลงสิ่งที่คีย์สามารถเรียกใช้ได้",
     "catalogScopeAll": "ทั้งสองอย่าง",
     "catalogScopeCombos": "เฉพาะคอมโบ",
-    "catalogScopeModels": "เฉพาะโมเดล"
+    "catalogScopeModels": "เฉพาะโมเดล",
+    "featureFlagAgentProfilesEnabledDescription": "เชื่อมบทบาทกับชุดโมเดลที่มีอยู่ ส่งออกเอเจนต์สำหรับเครื่องมือของไคลเอนต์"
   },
   "contextRtk": {
     "title": "RTK Engine",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "ลิงก์พาร์ทเนอร์",
     "dismissAriaLabel": "ปิด"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "ปิดใช้งานการสร้างโมเดลรูปแบบย่อยตามระดับการคิด (เช่น -low, -medium, -high) ในแค็ตตาล็อก /v1/models"
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "ปิดใช้งานการสร้างโมเดลรูปแบบย่อยตามระดับการคิด (เช่น -low, -medium, -high) ในแค็ตตาล็อก /v1/models",
+  "agentProfiles": {
+    "role": "บทบาท",
+    "planner": "ผู้วางแผน",
+    "implementer": "ผู้ดำเนินการ",
+    "reviewer": "ผู้ตรวจสอบ",
+    "fixer": "ผู้แก้ไข",
+    "researcher": "ผู้วิจัย",
+    "custom": "กำหนดเอง",
+    "client": "ไคลเอนต์",
+    "server": "เซิร์ฟเวอร์",
+    "workspace": "พื้นที่ทำงาน",
+    "help": "เชื่อมบทบาทกับชุดโมเดลที่มีอยู่ ส่งออกเอเจนต์สำหรับเครื่องมือของไคลเอนต์"
+  }
 }

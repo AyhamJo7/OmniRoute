@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "このキーに対して GET /v1/models が表示する内容です。一覧を絞り込んでも、キーが呼び出せる対象は変わりません。",
     "catalogScopeAll": "両方",
     "catalogScopeCombos": "コンボのみ",
-    "catalogScopeModels": "モデルのみ"
+    "catalogScopeModels": "モデルのみ",
+    "featureFlagAgentProfilesEnabledDescription": "役割を既存のコンボに関連付けます。クライアントのツール用にエージェントをエクスポートします。"
   },
   "contextRtk": {
     "title": "RTKエンジン",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "パートナーリンク",
     "dismissAriaLabel": "閉じる"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/modelsカタログで思考レベルのバリアント（例：-low、-medium、-high）を生成しないようにします。"
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/modelsカタログで思考レベルのバリアント（例：-low、-medium、-high）を生成しないようにします。",
+  "agentProfiles": {
+    "role": "役割",
+    "planner": "計画担当",
+    "implementer": "実装担当",
+    "reviewer": "レビュー担当",
+    "fixer": "修正担当",
+    "researcher": "調査担当",
+    "custom": "カスタム",
+    "client": "クライアント",
+    "server": "サーバー",
+    "workspace": "ワークスペース",
+    "help": "役割を既存のコンボに関連付けます。クライアントのツール用にエージェントをエクスポートします。"
+  }
 }

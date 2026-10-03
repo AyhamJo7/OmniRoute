@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Какво обявява GET /v1/models за този ключ. Ограничаването на списъка никога не променя какво може да извиква ключът.",
     "catalogScopeAll": "И двете",
     "catalogScopeCombos": "Само комбинации",
-    "catalogScopeModels": "Само модели"
+    "catalogScopeModels": "Само модели",
+    "featureFlagAgentProfilesEnabledDescription": "Свържете ролите със съществуващите комбинации. Експортирайте агенти за инструментите на вашия клиент."
   },
   "contextRtk": {
     "title": "RTK Engine",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Партньорска връзка",
     "dismissAriaLabel": "Затваряне"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Деактивирайте генерирането на варианти за ниво на разсъждение (напр. -low, -medium, -high) в каталога /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Деактивирайте генерирането на варианти за ниво на разсъждение (напр. -low, -medium, -high) в каталога /v1/models.",
+  "agentProfiles": {
+    "role": "Роля",
+    "planner": "Планировчик",
+    "implementer": "Изпълнител",
+    "reviewer": "Рецензент",
+    "fixer": "Коректор",
+    "researcher": "Изследовател",
+    "custom": "Персонализирано",
+    "client": "Клиент",
+    "server": "Сървър",
+    "workspace": "Работно пространство",
+    "help": "Свържете ролите със съществуващите комбинации. Експортирайте агенти за инструментите на вашия клиент."
+  }
 }

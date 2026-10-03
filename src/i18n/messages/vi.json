@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Những gì GET /v1/models hiển thị cho khóa này. Thu hẹp danh sách không làm thay đổi những gì khóa có thể gọi.",
     "catalogScopeAll": "Cả hai",
     "catalogScopeCombos": "Chỉ combo",
-    "catalogScopeModels": "Chỉ mô hình"
+    "catalogScopeModels": "Chỉ mô hình",
+    "featureFlagAgentProfilesEnabledDescription": "Liên kết vai trò với các tổ hợp hiện có. Xuất tác nhân cho công cụ của máy khách."
   },
   "contextRtk": {
     "title": "Công cụ RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Liên kết đối tác",
     "dismissAriaLabel": "Đóng"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Tắt tính năng tạo biến thể cấp độ suy nghĩ (ví dụ: -low, -medium, -high) trong danh mục /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Tắt tính năng tạo biến thể cấp độ suy nghĩ (ví dụ: -low, -medium, -high) trong danh mục /v1/models.",
+  "agentProfiles": {
+    "role": "Vai trò",
+    "planner": "Người lập kế hoạch",
+    "implementer": "Người triển khai",
+    "reviewer": "Người đánh giá",
+    "fixer": "Người sửa lỗi",
+    "researcher": "Nhà nghiên cứu",
+    "custom": "Tùy chỉnh",
+    "client": "Máy khách",
+    "server": "Máy chủ",
+    "workspace": "Không gian làm việc",
+    "help": "Liên kết vai trò với các tổ hợp hiện có. Xuất tác nhân cho công cụ của máy khách."
+  }
 }

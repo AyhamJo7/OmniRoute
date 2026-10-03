@@ -1,3 +1,5 @@
+import { getAgentProfileForAlias } from "@/lib/db/agentProfiles";
+import { rejectUnavailableAgentRequest } from "@/lib/agent-profiles/access";
 /**
  * API Key Policy Enforcement — Shared middleware for all /v1/* endpoints.
  *
@@ -257,6 +259,8 @@ function policyErrorResponse(
 }
 
 async function resolveRequestedComboName(modelStr: string): Promise<string | null> {
+  const profile = getAgentProfileForAlias(modelStr);
+  if (profile) return `agent/${profile.slug}`;
   const exact = await getComboByName(modelStr);
   if (exact && typeof exact.name === "string") return exact.name;
 
@@ -829,6 +833,8 @@ export async function enforceApiKeyPolicy(
   modelStr: string | null,
   options?: EnforceApiKeyPolicyOptions
 ): Promise<ApiKeyPolicyResult> {
+  const agentRejection = rejectUnavailableAgentRequest(modelStr, request.url);
+  if (agentRejection) return { apiKey: null, apiKeyInfo: null, rejection: agentRejection };
   // A real bearer key wins; then a bare x-api-key/x-goog-api-key that auth
   // accepted but extractApiKey() gates out; otherwise an authenticated dashboard
   // playground may test a specific key's policy by id (resolved server-side,

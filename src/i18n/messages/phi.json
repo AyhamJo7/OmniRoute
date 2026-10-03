@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Kung ano ang inilalabas ng GET /v1/models para sa key na ito. Ang pagpapaliit ng listahan ay hindi kailanman nagbabago sa kung ano ang maaaring tawagin ng key.",
     "catalogScopeAll": "Pareho",
     "catalogScopeCombos": "Mga combo lamang",
-    "catalogScopeModels": "Mga modelo lamang"
+    "catalogScopeModels": "Mga modelo lamang",
+    "featureFlagAgentProfilesEnabledDescription": "Iugnay ang mga tungkulin sa kasalukuyang mga combo. I-export ang mga ahente para sa mga tool ng iyong kliyente."
   },
   "contextRtk": {
     "title": "Engine ng RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Link ng partner",
     "dismissAriaLabel": "Isara"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Huwag paganahin ang pagbuo ng mga variant ng antas ng pag-iisip (hal. -low, -medium, -high) sa katalogong /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Huwag paganahin ang pagbuo ng mga variant ng antas ng pag-iisip (hal. -low, -medium, -high) sa katalogong /v1/models.",
+  "agentProfiles": {
+    "role": "Tungkulin",
+    "planner": "Tagaplano",
+    "implementer": "Tagapagpatupad",
+    "reviewer": "Tagasuri",
+    "fixer": "Tagapag-ayos",
+    "researcher": "Mananaliksik",
+    "custom": "Pasadya",
+    "client": "Kliyente",
+    "server": "Server",
+    "workspace": "Workspace",
+    "help": "Iugnay ang mga tungkulin sa kasalukuyang mga combo. I-export ang mga ahente para sa mga tool ng iyong kliyente."
+  }
 }

@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Co GET /v1/models uvádí pro tento klíč. Zúžení seznamu nikdy nezmění, které modely může klíč volat.",
     "catalogScopeAll": "Obojí",
     "catalogScopeCombos": "Pouze komba",
-    "catalogScopeModels": "Pouze modely"
+    "catalogScopeModels": "Pouze modely",
+    "featureFlagAgentProfilesEnabledDescription": "Propojte role se stávajícími kombinacemi. Exportujte agenty pro nástroje svého klienta."
   },
   "contextRtk": {
     "title": "Modul RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Partnerský odkaz",
     "dismissAriaLabel": "Zavřít"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Zakázat generování variant úrovně uvažování (např. -low, -medium, -high) v katalogu /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Zakázat generování variant úrovně uvažování (např. -low, -medium, -high) v katalogu /v1/models.",
+  "agentProfiles": {
+    "role": "Role",
+    "planner": "Plánovač",
+    "implementer": "Implementátor",
+    "reviewer": "Recenzent",
+    "fixer": "Opravář",
+    "researcher": "Výzkumník",
+    "custom": "Vlastní",
+    "client": "Klient",
+    "server": "Server",
+    "workspace": "Pracovní prostor",
+    "help": "Propojte role se stávajícími kombinacemi. Exportujte agenty pro nástroje svého klienta."
+  }
 }

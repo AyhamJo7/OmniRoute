@@ -8,6 +8,7 @@ export const HIDEABLE_SIDEBAR_ITEM_IDS = [
   "model-catalog",
   "embedded-services",
   "combos",
+  "agent-profiles",
   "combos-live",
   "quota",
   // OmniProxy > Compression Context (Settings → Combos → engines → Studio)
@@ -156,7 +157,7 @@ export interface SidebarItemDefinition {
    * `isSidebarItemVisibleForFlags()` alongside the existing hidden-items
    * filter. Add new flag keys to this union as new flag-gated items appear.
    */
-  featureFlagKey?: "RADAR_ENABLED";
+  featureFlagKey?: "RADAR_ENABLED" | "AGENT_PROFILES_ENABLED";
 }
 
 export interface SidebarItemGroup {

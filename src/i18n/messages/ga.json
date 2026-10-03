@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "An méid a fhógraíonn GET /v1/models don eochair seo. Ní athraíonn cúngú an liosta na samhlacha ar féidir leis an eochair glaoch orthu.",
     "catalogScopeAll": "An dá cheann",
     "catalogScopeCombos": "Teaglamaí amháin",
-    "catalogScopeModels": "Samhlacha amháin"
+    "catalogScopeModels": "Samhlacha amháin",
+    "featureFlagAgentProfilesEnabledDescription": "Ceangail róil leis na teaglamaí atá ann. Easpórtáil gníomhairí d'uirlisí do chliaint."
   },
   "contextRtk": {
     "title": "Inneall RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Nasc comhpháirtíochta",
     "dismissAriaLabel": "Dún"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Díchumasaigh giniúint leaganacha leibhéil smaointeoireachta (m.sh. -low, -medium, -high) i gcatalóg /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Díchumasaigh giniúint leaganacha leibhéil smaointeoireachta (m.sh. -low, -medium, -high) i gcatalóg /v1/models.",
+  "agentProfiles": {
+    "role": "Ról",
+    "planner": "Pleanálaí",
+    "implementer": "Feidhmitheoir",
+    "reviewer": "Athbhreithneoir",
+    "fixer": "Deisitheoir",
+    "researcher": "Taighdeoir",
+    "custom": "Saincheaptha",
+    "client": "Cliant",
+    "server": "Freastalaí",
+    "workspace": "Spás oibre",
+    "help": "Ceangail róil leis na teaglamaí atá ann. Easpórtáil gníomhairí d'uirlisí do chliaint."
+  }
 }

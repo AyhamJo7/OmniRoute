@@ -1,3 +1,4 @@
+import { rejectUnavailableAgentRequest } from "@/lib/agent-profiles/access";
 import { handleEmbedding } from "@omniroute/open-sse/handlers/embeddings.ts";
 import {
   parseEmbeddingModel,
@@ -66,6 +67,11 @@ export async function createEmbeddingResponse(
   body: ValidatedEmbeddingBody,
   options: EmbeddingHandlerOptions = {}
 ): Promise<Response> {
+  const agentRejection = rejectUnavailableAgentRequest(
+    body.model,
+    "http://localhost/v1/embeddings"
+  );
+  if (agentRejection) return agentRejection;
   const modelStr = body.model;
   const startTime = Date.now();
 

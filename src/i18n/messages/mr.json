@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "या कीसाठी GET /v1/models काय दर्शवते. सूची मर्यादित केल्याने ही की काय कॉल करू शकते, यात कधीही बदल होत नाही.",
     "catalogScopeAll": "दोन्ही",
     "catalogScopeCombos": "फक्त कॉम्बो",
-    "catalogScopeModels": "फक्त मॉडेल्स"
+    "catalogScopeModels": "फक्त मॉडेल्स",
+    "featureFlagAgentProfilesEnabledDescription": "भूमिका विद्यमान कॉम्बोशी जोडा. तुमच्या क्लायंटच्या साधनांसाठी एजंट निर्यात करा."
   },
   "contextRtk": {
     "title": "RTK इंजिन",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "भागीदार लिंक",
     "dismissAriaLabel": "बंद करा"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models कॅटलॉगमध्ये विचार-पातळीच्या प्रकारांची (उदा. -low, -medium, -high) निर्मिती अक्षम करा."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models कॅटलॉगमध्ये विचार-पातळीच्या प्रकारांची (उदा. -low, -medium, -high) निर्मिती अक्षम करा.",
+  "agentProfiles": {
+    "role": "भूमिका",
+    "planner": "नियोजक",
+    "implementer": "अंमलबजावणीकर्ता",
+    "reviewer": "परीक्षक",
+    "fixer": "दुरुस्तीकार",
+    "researcher": "संशोधक",
+    "custom": "सानुकूल",
+    "client": "क्लायंट",
+    "server": "सर्व्हर",
+    "workspace": "कार्यक्षेत्र",
+    "help": "भूमिका विद्यमान कॉम्बोशी जोडा. तुमच्या क्लायंटच्या साधनांसाठी एजंट निर्यात करा."
+  }
 }

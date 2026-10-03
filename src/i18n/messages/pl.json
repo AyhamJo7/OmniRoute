@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Modele udostępniane dla tego klucza przez GET /v1/models. Zawężenie listy nie zmienia modeli, które można wywołać za pomocą klucza.",
     "catalogScopeAll": "Oba",
     "catalogScopeCombos": "Tylko kombinacje",
-    "catalogScopeModels": "Tylko modele"
+    "catalogScopeModels": "Tylko modele",
+    "featureFlagAgentProfilesEnabledDescription": "Połącz role z istniejącymi kombinacjami. Eksportuj agentów dla narzędzi swojego klienta."
   },
   "contextRtk": {
     "title": "Silnik RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Link partnerski",
     "dismissAriaLabel": "Zamknij"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Wyłącz generowanie wariantów poziomu rozumowania (np. -low, -medium, -high) w katalogu /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Wyłącz generowanie wariantów poziomu rozumowania (np. -low, -medium, -high) w katalogu /v1/models.",
+  "agentProfiles": {
+    "role": "Rola",
+    "planner": "Planista",
+    "implementer": "Wykonawca",
+    "reviewer": "Recenzent",
+    "fixer": "Naprawiający",
+    "researcher": "Badacz",
+    "custom": "Niestandardowy",
+    "client": "Klient",
+    "server": "Serwer",
+    "workspace": "Obszar roboczy",
+    "help": "Połącz role z istniejącymi kombinacjami. Eksportuj agentów dla narzędzi swojego klienta."
+  }
 }

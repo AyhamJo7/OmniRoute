@@ -640,6 +640,9 @@ export async function getModelInfoOrRetirementResponse(modelId: string) {
  * @returns {Promise<Object|null>} Full combo object or null if not a combo
  */
 export async function getCombo(modelStr) {
+  const { resolveAgentProfileCombo } = await import("@/lib/agent-profiles/resolver");
+  const profile = await resolveAgentProfileCombo(modelStr);
+  if (profile) return profile;
   // Try exact match first (supports combos actually named "combo/ANY")
   let combo = await getComboByName(modelStr);
   if (combo && Array.isArray(combo.models) && combo.models.length > 0) {

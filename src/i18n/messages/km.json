@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "អ្វីដែល GET /v1/models បង្ហាញសម្រាប់សោនេះ។ ការបង្រួមបញ្ជីមិនផ្លាស់ប្តូរអ្វីដែលសោនេះអាចហៅប្រើបានឡើយ។",
     "catalogScopeAll": "ទាំងពីរ",
     "catalogScopeCombos": "តែបន្សំប៉ុណ្ណោះ",
-    "catalogScopeModels": "តែម៉ូដែលប៉ុណ្ណោះ"
+    "catalogScopeModels": "តែម៉ូដែលប៉ុណ្ណោះ",
+    "featureFlagAgentProfilesEnabledDescription": "ភ្ជាប់តួនាទីទៅបន្សំដែលមានស្រាប់។ នាំចេញភ្នាក់ងារសម្រាប់ឧបករណ៍របស់កម្មវិធីភ្ញៀវអ្នក។"
   },
   "contextRtk": {
     "title": "ម៉ាស៊ីន RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "តំណដៃគូ",
     "dismissAriaLabel": "បិទ"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "បិទការបង្កើតវ៉ារ្យ៉ង់កម្រិតនៃការគិត (ឧ. -low, -medium, -high) នៅក្នុងកាតាឡុក /v1/models។"
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "បិទការបង្កើតវ៉ារ្យ៉ង់កម្រិតនៃការគិត (ឧ. -low, -medium, -high) នៅក្នុងកាតាឡុក /v1/models។",
+  "agentProfiles": {
+    "role": "តួនាទី",
+    "planner": "អ្នករៀបផែនការ",
+    "implementer": "អ្នកអនុវត្ត",
+    "reviewer": "អ្នកពិនិត្យ",
+    "fixer": "អ្នកកែសម្រួល",
+    "researcher": "អ្នកស្រាវជ្រាវ",
+    "custom": "ផ្ទាល់ខ្លួន",
+    "client": "កម្មវិធីភ្ញៀវ",
+    "server": "ម៉ាស៊ីនមេ",
+    "workspace": "កន្លែងធ្វើការ",
+    "help": "ភ្ជាប់តួនាទីទៅបន្សំដែលមានស្រាប់។ នាំចេញភ្នាក់ងារសម្រាប់ឧបករណ៍របស់កម្មវិធីភ្ញៀវអ្នក។"
+  }
 }

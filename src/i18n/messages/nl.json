@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Wat GET /v1/models voor deze sleutel weergeeft. Het beperken van de lijst verandert nooit welke modellen met de sleutel kunnen worden aangeroepen.",
     "catalogScopeAll": "Beide",
     "catalogScopeCombos": "Alleen combo's",
-    "catalogScopeModels": "Alleen modellen"
+    "catalogScopeModels": "Alleen modellen",
+    "featureFlagAgentProfilesEnabledDescription": "Koppel rollen aan bestaande combinaties. Exporteer agents voor de hulpmiddelen van je client."
   },
   "contextRtk": {
     "title": "RTK Engine",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Partnerlink",
     "dismissAriaLabel": "Sluiten"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Schakel het genereren van varianten op denkniveau (bijv. -low, -medium, -high) in de catalogus /v1/models uit."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Schakel het genereren van varianten op denkniveau (bijv. -low, -medium, -high) in de catalogus /v1/models uit.",
+  "agentProfiles": {
+    "role": "Rol",
+    "planner": "Planner",
+    "implementer": "Uitvoerder",
+    "reviewer": "Beoordelaar",
+    "fixer": "Hersteller",
+    "researcher": "Onderzoeker",
+    "custom": "Aangepast",
+    "client": "Client",
+    "server": "Server",
+    "workspace": "Werkruimte",
+    "help": "Koppel rollen aan bestaande combinaties. Exporteer agents voor de hulpmiddelen van je client."
+  }
 }

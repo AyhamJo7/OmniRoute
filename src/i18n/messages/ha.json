@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Abin da GET /v1/models ke nuna wa wannan maɓalli. Taƙaita jerin ba ya taɓa canza abin da maɓallin zai iya kira.",
     "catalogScopeAll": "Duka biyun",
     "catalogScopeCombos": "Haɗe-haɗe kawai",
-    "catalogScopeModels": "Samfura kawai"
+    "catalogScopeModels": "Samfura kawai",
+    "featureFlagAgentProfilesEnabledDescription": "Haɗa matsayi da haɗin da ake da su. Fitar da wakilai don kayan aikin abokin cinikinka."
   },
   "contextRtk": {
     "title": "Injin RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Hanyar haɗin abokin hulɗa",
     "dismissAriaLabel": "Yi watsi"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Kashe samar da nau'ikan matakan tunani (misali -low, -medium, -high) a cikin kundin /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Kashe samar da nau'ikan matakan tunani (misali -low, -medium, -high) a cikin kundin /v1/models.",
+  "agentProfiles": {
+    "role": "Matsayi",
+    "planner": "Mai tsara shiri",
+    "implementer": "Mai aiwatarwa",
+    "reviewer": "Mai dubawa",
+    "fixer": "Mai gyarawa",
+    "researcher": "Mai bincike",
+    "custom": "Na musamman",
+    "client": "Abokin ciniki",
+    "server": "Sabar",
+    "workspace": "Wurin aiki",
+    "help": "Haɗa matsayi da haɗin da ake da su. Fitar da wakilai don kayan aikin abokin cinikinka."
+  }
 }

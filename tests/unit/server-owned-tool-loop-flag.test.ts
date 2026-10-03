@@ -73,7 +73,8 @@ describe("feature-flags-settings count update", () => {
     // default off) to 77; STREAM_READINESS_STALL_RETRY (#14669, default off) to 78;
     // OPENCODE_POOL_RESELECT (default off) to 79; PROXY_POOL_SHARED_EGRESS_ORDER
     // (#14657, default off) to 80.
-    assert.equal(FEATURE_FLAG_DEFINITIONS.length, 80);
+    // Agent profiles add one independent, default-off feature flag.
+    assert.equal(FEATURE_FLAG_DEFINITIONS.length, 81);
   });
 });
 
