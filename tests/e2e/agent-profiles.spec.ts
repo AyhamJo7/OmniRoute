@@ -33,7 +33,9 @@ test("profiles gate the real dashboard, persist a role and preview client export
     comboId = ((await comboResponse.json()) as { id: string }).id;
 
     await gotoDashboardRoute(page, "/dashboard/agent-profiles");
-    await expect(page.getByRole("heading", { name: "Agents", exact: true })).toBeVisible();
+    await expect(
+      page.getByRole("main").getByRole("heading", { name: "Agents", exact: true })
+    ).toBeVisible();
     await page.getByRole("textbox", { name: "Name", exact: true }).fill("Browser Reviewer");
     await page.getByRole("textbox", { name: "agent/<slug>" }).fill(slug);
     await page.getByRole("combobox", { name: "Role", exact: true }).selectOption("reviewer");
