@@ -1729,3 +1729,9 @@ Az `open-sse/services/combo.ts` és a `src/lib/quota/quotaScheduler.ts` használ
 | Változó                         | Alapértelmezett érték | Forrásfájl                   | Leírás                                                                                                                                                                                                                                                                                  |
 | ------------------------------- | --------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`                   | `open-sse/services/combo.ts` | Ha az értéke `1`, kihagyja azokat a kapcsolatokat, amelyek időablakonkénti tokenkerete (`rateLimitOverrides.tpm`, `provider_quota_state` tábla) a továbbítás előtt nem tudja fedezni a kérés becsült költségét. Ha nincs keret beállítva, a kérés alapértelmezés szerint engedélyezett. |
+
+### Ügynökök
+
+`AGENT_PROFILES_ENABLED=false`. Kapcsolja a szerepeket meglévő kombinációkhoz. Exportáljon ügynököket a kliens eszközeihez.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

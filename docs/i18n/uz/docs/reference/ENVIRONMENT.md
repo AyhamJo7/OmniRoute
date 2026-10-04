@@ -1734,3 +1734,9 @@ So‘rovdan oldin token byudjetini tekshirish uchun `open-sse/services/combo.ts`
 | O‘zgaruvchi                     | Standart qiymat | Manba fayl                   | Tavsif                                                                                                                                                                                                                                                                                    |
 | ------------------------------- | --------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`             | `open-sse/services/combo.ts` | `1` bo‘lganda, jo‘natishdan oldin har bir vaqt oynasi uchun token byudjeti (`rateLimitOverrides.tpm`, `provider_quota_state` jadvali) so‘rovning taxminiy xarajatini qoplay olmaydigan ulanishlarni o‘tkazib yuboradi. Byudjet sozlanmagan bo‘lsa, tekshiruvni chetlab o‘tib davom etadi. |
+
+### Agentlar
+
+`AGENT_PROFILES_ENABLED=false`. Rollarni mavjud kombinatsiyalarga ulang. Mijozingiz vositalari uchun agentlarni eksport qiling.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

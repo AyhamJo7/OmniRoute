@@ -1731,3 +1731,9 @@ Trình tiêu thụ SSE hoạt động lâu dài, phản chiếu các tác vụ t
 | Biến                            | Mặc định | Tệp nguồn                    | Mô tả                                                                                                                                                                                                                               |
 | ------------------------------- | -------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`      | `open-sse/services/combo.ts` | Khi là `1`, bỏ qua các kết nối có ngân sách token theo từng cửa sổ (`rateLimitOverrides.tpm`, bảng `provider_quota_state`) không đủ đáp ứng chi phí yêu cầu ước tính trước khi gửi. Tiếp tục cho phép khi không cấu hình ngân sách. |
+
+### Tác nhân
+
+`AGENT_PROFILES_ENABLED=false`. Liên kết vai trò với các tổ hợp hiện có. Xuất tác nhân cho công cụ của máy khách.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

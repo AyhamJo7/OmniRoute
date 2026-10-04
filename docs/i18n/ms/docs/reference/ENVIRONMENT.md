@@ -1739,3 +1739,9 @@ Digunakan oleh `open-sse/services/combo.ts` dan `src/lib/quota/quotaScheduler.ts
 | Pemboleh Ubah                   | Lalai | Fail Sumber                  | Penerangan                                                                                                                                                                                                                                                  |
 | ------------------------------- | ----- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`   | `open-sse/services/combo.ts` | Apabila `1`, langkau sambungan yang bajet token setiap tetingkapnya (`rateLimitOverrides.tpm`, jadual `provider_quota_state`) tidak dapat menampung anggaran kos permintaan sebelum penghantaran. Teruskan apabila gagal jika tiada bajet dikonfigurasikan. |
+
+### Ejen
+
+`AGENT_PROFILES_ENABLED=false`. Hubungkan peranan kepada gabungan sedia ada. Eksport ejen untuk alat klien anda.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

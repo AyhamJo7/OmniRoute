@@ -1739,3 +1739,9 @@ Mai karɓar SSE mai dogon rai wanda ke kwafin ayyukan cibiyar OmniConductor zuwa
 | Sauyi                           | Tsoho | Fayil ɗin Tushe              | Bayani                                                                                                                                                                                                                                    |
 | ------------------------------- | ----- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`   | `open-sse/services/combo.ts` | Idan `1`, a tsallake haɗin da kasafin token ɗinsu na kowane zangon lokaci (`rateLimitOverrides.tpm`, teburin `provider_quota_state`) ba zai iya ɗaukar kiyasin kuɗin buƙatar ba kafin aikawa. A bari a ci gaba idan ba a saita kasafi ba. |
+
+### Wakilai
+
+`AGENT_PROFILES_ENABLED=false`. Haɗa matsayi da haɗin da ake da su. Fitar da wakilai don kayan aikin abokin cinikinka.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

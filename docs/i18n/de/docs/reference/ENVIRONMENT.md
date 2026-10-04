@@ -1730,3 +1730,9 @@ Wird von `open-sse/services/combo.ts` und `src/lib/quota/quotaScheduler.ts` für
 | Variable                        | Standardwert | Quelldatei                   | Beschreibung                                                                                                                                                                                                                                                                                           |
 | ------------------------------- | ------------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`          | `open-sse/services/combo.ts` | Wenn auf `1` gesetzt, werden Verbindungen übersprungen, deren Token-Budget pro Zeitfenster (`rateLimitOverrides.tpm`, Tabelle `provider_quota_state`) die geschätzten Anfragekosten vor der Weiterleitung nicht abdecken kann. Wenn kein Budget konfiguriert ist, wird die Anfrage dennoch zugelassen. |
+
+### Agenten
+
+`AGENT_PROFILES_ENABLED=false`. Verknüpfen Sie Rollen mit bestehenden Kombinationen. Exportieren Sie Agenten für die Werkzeuge Ihres Clients.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

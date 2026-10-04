@@ -1737,3 +1737,9 @@ Upotrebljavaju ga `open-sse/services/combo.ts` i `src/lib/quota/quotaScheduler.t
 | Varijabla                       | Zadano | Izvorna datoteka             | Opis                                                                                                                                                                                                                                             |
 | ------------------------------- | ------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`    | `open-sse/services/combo.ts` | Kada je `1`, preskače veze čiji proračun tokena po vremenskom prozoru (`rateLimitOverrides.tpm`, tablica `provider_quota_state`) ne može pokriti procijenjeni trošak zahtjeva prije slanja. Ako proračun nije konfiguriran, zahtjev se propušta. |
+
+### Agenti
+
+`AGENT_PROFILES_ENABLED=false`. Povežite uloge s postojećim kombinacijama. Izvezite agente za alate svojeg klijenta.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

@@ -1737,3 +1737,9 @@ Onye nnata SSE na-adịte aka nke na-eme ka ọrụ hub OmniConductor kwekọọ
 | Mgbanwe                         | Ndabara | Faịlụ Isi Mmalite            | Nkọwa                                                                                                                                                                                                                                             |
 | ------------------------------- | ------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`     | `open-sse/services/combo.ts` | Mgbe ọ bụ `1`, mafere njikọ ndị mmefu token ha n'ime windo ọ bụla (`rateLimitOverrides.tpm`, tebụl `provider_quota_state`) na-enweghị ike ịkwụ ụgwọ atụmatụ ọnụ ahịa arịrịọ tupu izipu ya. Ọ na-ekwe ka arịrịọ gafee mgbe enweghị mmefu e haziri. |
+
+### Ndị nnọchi anya
+
+`AGENT_PROFILES_ENABLED=false`. Jikọta ọrụ na ngwakọta ndị dị ugbu a. Bupụ ndị nnọchi anya maka ngwaọrụ onye ahịa gị.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

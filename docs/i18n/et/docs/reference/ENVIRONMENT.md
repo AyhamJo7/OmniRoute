@@ -1738,3 +1738,9 @@ Seda kasutavad `open-sse/services/combo.ts` ja `src/lib/quota/quotaScheduler.ts`
 | Muutuja                         | Vaikeväärtus | Lähtefail                    | Kirjeldus                                                                                                                                                                                                                                                     |
 | ------------------------------- | ------------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`          | `open-sse/services/combo.ts` | Kui väärtus on `1`, jäetakse vahele ühendused, mille aknapõhine tokenieelarve (`rateLimitOverrides.tpm`, tabel `provider_quota_state`) ei kata enne saatmist päringu hinnangulist maksumust. Kui eelarvet pole seadistatud, jätkatakse tõrke korral lubavalt. |
+
+### Agendid
+
+`AGENT_PROFILES_ENABLED=false`. Siduge rollid olemasolevate kombinatsioonidega. Eksportige agendid oma kliendi tööriistade jaoks.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

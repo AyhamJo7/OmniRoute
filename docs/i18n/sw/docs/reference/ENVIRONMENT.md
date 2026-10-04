@@ -1738,3 +1738,9 @@ Hutumiwa na `open-sse/services/combo.ts` na `src/lib/quota/quotaScheduler.ts` kw
 | Kigezo                          | Chaguo-msingi | Faili Chanzo                 | Maelezo                                                                                                                                                                                                                                                           |
 | ------------------------------- | ------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`           | `open-sse/services/combo.ts` | Ikiwa ni `1`, ruka miunganisho ambayo bajeti yake ya tokeni kwa kila kipindi (`rateLimitOverrides.tpm`, jedwali la `provider_quota_state`) haitoshi kumudu gharama iliyokadiriwa ya ombi kabla ya kutumwa. Endelea bila kuzuia ikiwa hakuna bajeti iliyosanidiwa. |
+
+### Mawakala
+
+`AGENT_PROFILES_ENABLED=false`. Unganisha majukumu na michanganyiko iliyopo. Hamisha mawakala kwa zana za mteja wako.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

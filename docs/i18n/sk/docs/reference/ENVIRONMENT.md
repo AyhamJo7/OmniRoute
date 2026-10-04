@@ -1731,3 +1731,9 @@ Používa sa v `open-sse/services/combo.ts` a `src/lib/quota/quotaScheduler.ts` 
 | Premenná                        | Predvolená hodnota | Zdrojový súbor               | Popis                                                                                                                                                                                                                                                                    |
 | ------------------------------- | ------------------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`                | `open-sse/services/combo.ts` | Pri hodnote `1` sa preskočia pripojenia, ktorých rozpočet tokenov na dané okno (`rateLimitOverrides.tpm`, tabuľka `provider_quota_state`) nedokáže pred odoslaním pokryť odhadované náklady požiadavky. Ak nie je nakonfigurovaný žiadny rozpočet, požiadavka sa povolí. |
+
+### Agenti
+
+`AGENT_PROFILES_ENABLED=false`. Prepojte roly s existujúcimi kombináciami. Exportujte agentov pre nástroje svojho klienta.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

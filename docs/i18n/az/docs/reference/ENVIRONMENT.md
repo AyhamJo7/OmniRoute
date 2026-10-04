@@ -1741,3 +1741,9 @@ Sorğudan əvvəl token büdcəsini yoxlamaq üçün `open-sse/services/combo.ts
 | Dəyişən                         | İlkin dəyər | Mənbə faylı                  | Təsvir                                                                                                                                                                                                                                                             |
 | ------------------------------- | ----------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`         | `open-sse/services/combo.ts` | `1` olduqda, göndərişdən əvvəl hər zaman pəncərəsi üzrə token büdcəsi (`rateLimitOverrides.tpm`, `provider_quota_state` cədvəli) təxmini sorğu xərcini qarşılaya bilməyən bağlantıları ötürür. Büdcə konfiqurasiya edilməyibsə, uğursuzluğa baxmayaraq davam edir. |
+
+### Agentlər
+
+`AGENT_PROFILES_ENABLED=false`. Rolları mövcud kombinasiyalara bağlayın. Müştərinizin alətləri üçün agentləri ixrac edin.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)
