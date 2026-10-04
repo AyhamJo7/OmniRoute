@@ -39,6 +39,17 @@ continuation requests carried actual fixture evidence, and every call retained t
 original task. All four requests had three native cache boundaries. The gateway did
 not execute the tool.
 
+A separate normal-client run discovered the exported `.claude/agents` file directly
+in an isolated project and executed the real Read tool. Its four requests retained
+the original task and actual tool-result evidence, with two cache boundaries each.
+This one-run check is separate from the twenty-run measurement below.
+
+The pinned OpenCode client accepted the exported configuration and started. A direct
+CLI subagent selection fell back to the default primary agent; the attempted Read was
+denied. This does not validate an OpenCode role tool loop. The exports declare
+subagents for parent-client delegation, and the parent's model must also be selected
+explicitly through the gateway. Native OpenCode inference remains unverified.
+
 Twenty consecutive real-client fixture loops passed. End-to-end p50 was 1.644 seconds
 and p95 was 1.714 seconds, with four upstream calls each. This includes local client
 startup and loopback stubs on the development host; it is not a production latency

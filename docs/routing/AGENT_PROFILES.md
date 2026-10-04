@@ -82,6 +82,13 @@ environment reference. Set that variable yourself; exports never contain saved p
 credentials. Keep the gateway URL credential-free. Do not overwrite other project
 providers or permission rules when merging.
 
+Choose the parent client's gateway provider and ordinary subscription-first combo
+explicitly as well. Exporting subagents does not change the parent's default model.
+In OpenCode, these definitions have `mode: subagent`: ask the parent to delegate to
+them. Selecting a subagent with `opencode run --agent` falls back to a primary agent;
+it does not establish the intended role or billing route. Inspect the actual model
+and gateway trace before relying on that selection.
+
 JSON import accepts `{ "version": 1, "profiles": [...] }`. Combo IDs must exist on the
 receiving installation. Imports create new profiles atomically and reject collisions;
 they do not overwrite existing definitions. Change a slug when cloning. Deleted slugs
