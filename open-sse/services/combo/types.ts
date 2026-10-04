@@ -133,6 +133,8 @@ export type HandleComboChatOptions = {
   relayOptions?: ComboRelayOptions | null;
   signal?: AbortSignal | null;
   apiKeyAllowedConnections?: string[] | null;
+  /** Agent projections require access to both their alias and their target combo. */
+  apiKeyAllowedCombos?: string[] | null;
   nesting?: ComboNestingContext | null;
   hiddenModelsByProvider?: HiddenModelsByProvider;
   /** Native Responses clients (for example Codex CLI/Desktop) manage compaction themselves. */

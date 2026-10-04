@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Ohun tí GET /v1/models fi hàn fún kọ́kọ́rọ́ yìí. Dídín àkójọ náà kù kì í yí ohun tí kọ́kọ́rọ́ náà lè pè padà.",
     "catalogScopeAll": "Méjèèjì",
     "catalogScopeCombos": "Àwọn àkópọ̀ nìkan",
-    "catalogScopeModels": "Àwọn àwòṣe nìkan"
+    "catalogScopeModels": "Àwọn àwòṣe nìkan",
+    "featureFlagAgentProfilesEnabledDescription": "So àwọn ipa pọ̀ mọ́ àwọn àkópọ̀ tó wà. Gbé àwọn aṣojú jáde fún irinṣẹ́ oníbàárà rẹ."
   },
   "contextRtk": {
     "title": "Ẹ́ńjìnnì RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Ìjápọ̀ aláṣiṣẹ́pọ̀",
     "dismissAriaLabel": "Pa á tì"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Pa ṣíṣẹ̀dá àwọn ẹ̀yà ìpele ìrònú (fún àpẹẹrẹ -low, -medium, -high) nínú àkójọ /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Pa ṣíṣẹ̀dá àwọn ẹ̀yà ìpele ìrònú (fún àpẹẹrẹ -low, -medium, -high) nínú àkójọ /v1/models.",
+  "agentProfiles": {
+    "role": "Ipa",
+    "planner": "Olùṣètò",
+    "implementer": "Olùmúṣẹ",
+    "reviewer": "Olùṣàyẹ̀wò",
+    "fixer": "Olùṣàtúnṣe",
+    "researcher": "Olùwádìí",
+    "custom": "Àkànṣe",
+    "client": "Oníbàárà",
+    "server": "Olùpèsè",
+    "workspace": "Àyè iṣẹ́",
+    "help": "So àwọn ipa pọ̀ mọ́ àwọn àkópọ̀ tó wà. Gbé àwọn aṣojú jáde fún irinṣẹ́ oníbàárà rẹ."
+  }
 }

@@ -1737,3 +1737,9 @@ Käytössä tiedostoissa `open-sse/services/combo.ts` ja `src/lib/quota/quotaSch
 | Muuttuja                        | Oletusarvo | Lähdetiedosto                | Kuvaus                                                                                                                                                                                                                                                            |
 | ------------------------------- | ---------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`        | `open-sse/services/combo.ts` | Kun arvo on `1`, ohittaa yhteydet, joiden ikkunakohtainen token-budjetti (`rateLimitOverrides.tpm`, taulu `provider_quota_state`) ei riitä arvioituihin pyyntökustannuksiin ennen lähettämistä. Sallii pyynnön virhetilanteessa, kun budjettia ei ole määritetty. |
+
+### Agentit
+
+`AGENT_PROFILES_ENABLED=false`. Yhdistä roolit olemassa oleviin yhdistelmiin. Vie agentit asiakasohjelmasi työkaluja varten.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

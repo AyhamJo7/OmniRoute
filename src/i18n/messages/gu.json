@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "આ કી માટે GET /v1/models શું દર્શાવે છે. સૂચિને મર્યાદિત કરવાથી કી કયા મોડલને કૉલ કરી શકે છે તેમાં ક્યારેય ફેરફાર થતો નથી.",
     "catalogScopeAll": "બંને",
     "catalogScopeCombos": "ફક્ત કોમ્બોઝ",
-    "catalogScopeModels": "ફક્ત મોડલ્સ"
+    "catalogScopeModels": "ફક્ત મોડલ્સ",
+    "featureFlagAgentProfilesEnabledDescription": "ભૂમિકાઓને હાલના કોમ્બો સાથે જોડો. તમારા ક્લાયન્ટનાં સાધનો માટે એજન્ટો નિકાસ કરો."
   },
   "contextRtk": {
     "title": "RTK એન્જિન",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "ભાગીદાર લિંક",
     "dismissAriaLabel": "બંધ કરો"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models કેટલોગમાં વિચાર-સ્તરના વેરિઅન્ટ્સ (દા.ત. -low, -medium, -high) બનાવવાનું નિષ્ક્રિય કરો."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models કેટલોગમાં વિચાર-સ્તરના વેરિઅન્ટ્સ (દા.ત. -low, -medium, -high) બનાવવાનું નિષ્ક્રિય કરો.",
+  "agentProfiles": {
+    "role": "ભૂમિકા",
+    "planner": "આયોજક",
+    "implementer": "અમલીકરણકર્તા",
+    "reviewer": "સમીક્ષક",
+    "fixer": "સુધારક",
+    "researcher": "સંશોધક",
+    "custom": "કસ્ટમ",
+    "client": "ક્લાયન્ટ",
+    "server": "સર્વર",
+    "workspace": "કાર્યસ્થળ",
+    "help": "ભૂમિકાઓને હાલના કોમ્બો સાથે જોડો. તમારા ક્લાયન્ટનાં સાધનો માટે એજન્ટો નિકાસ કરો."
+  }
 }

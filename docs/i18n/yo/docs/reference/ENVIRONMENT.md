@@ -1737,3 +1737,9 @@ A ń lò ó nípasẹ̀ `open-sse/services/combo.ts` àti `src/lib/quota/quotaSc
 | Àyípadà                         | Àìyípadà | Fáìlì Orísun                 | Àpèjúwe                                                                                                                                                                                                                                   |
 | ------------------------------- | -------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`      | `open-sse/services/combo.ts` | Nígbà tí ó jẹ́ `1`, fo àwọn àsopọ̀ tí ìnáwó àmì wọn fún fèrèsé kọ̀ọ̀kan (`rateLimitOverrides.tpm`, tábìlì `provider_quota_state`) kò lè bo ìwọ̀n iye owó ìbéèrè tí a fojú díwọ̀n kí a tó fi ránṣẹ́. Máa tẹ̀síwájú tí kò bá sí ìnáwó tí a ti ṣètò. |
+
+### Àwọn Aṣojú
+
+`AGENT_PROFILES_ENABLED=false`. So àwọn ipa pọ̀ mọ́ àwọn àkópọ̀ tó wà. Gbé àwọn aṣojú jáde fún irinṣẹ́ oníbàárà rẹ.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

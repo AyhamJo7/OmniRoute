@@ -1,3 +1,6 @@
+import { getCombosCachedForChat } from "@/lib/agent-profiles/routing-collection";
+import { comboGraphContainsAgentProfile } from "@/lib/agent-profiles/dispatch-guard";
+import { getAgentProjectionOwner } from "@/lib/agent-profiles/compiler";
 import { randomUUID } from "crypto";
 import { resolveChatRequestBody } from "./requestBody";
 import * as chatAdmission from "./chatAdmission.ts";
@@ -79,12 +82,11 @@ import {
   getSessionAccountAffinity,
 } from "@/lib/db/sessionAccountAffinity";
 import { dispatchChatWithAffinityEviction } from "./chatDispatch";
-import { getCachedSettings, getCombosCacheVersion } from "@/lib/db/readCache";
+import { getCachedSettings } from "@/lib/db/readCache";
 import { comboCheckProvider, ghComboGate } from "./chat/githubLiveCatalogFilter.ts";
 import { markEmergencyFallback } from "./emergencyFallbackHeader.ts";
 import { comboTargetPassesKeyModelPolicy } from "./chat/comboTargetKeyPolicy.ts";
 import { recordGateRejection, recordQuotaParkedSkip } from "./quotaParkedSkipUsage";
-import { getCombos } from "@/lib/db/combos";
 import { resolveModelLockoutSettings } from "@/lib/resilience/modelLockoutSettings";
 import {
   ensureOpenAIStoreSessionFallback,
@@ -272,10 +274,6 @@ registerGrokWebQuotaFetcher();
 // what lets the per-window cutoff modal in Dashboard › Limits actually
 // enforce thresholds for Claude / GLM / Cursor / etc., not just Codex.
 registerGenericQuotaFetchers();
-let combosCachePromise: Promise<ComboLike[]> | null = null;
-let combosCacheTs = 0;
-let combosCacheVersionSnapshot = -1;
-const COMBOS_CACHE_TTL_MS = 10_000;
 const DEFER_METERED_BUDGET = { meteredBudget: "defer-to-candidate" } as const;
 
 /**
@@ -301,27 +299,6 @@ async function resolveComboContextOverflowDeferral(
   } catch {
     return { defer: false, exclusions: undefined };
   }
-}
-
-async function getCombosCachedForChat(): Promise<ComboLike[]> {
-  const now = Date.now();
-  // Explicit non-null check: we intentionally cache and return the Promise
-  // itself (to dedupe concurrent callers), so this is not a forgotten await.
-  // The version check makes combo edits (create/update/delete/reorder) take
-  // effect immediately instead of after the 10s TTL — otherwise a removed
-  // target/model could keep being served as a "phantom" for up to 10s (#3147).
-  if (
-    combosCachePromise !== null &&
-    now - combosCacheTs < COMBOS_CACHE_TTL_MS &&
-    combosCacheVersionSnapshot === getCombosCacheVersion()
-  ) {
-    return combosCachePromise;
-  }
-
-  combosCacheTs = now;
-  combosCacheVersionSnapshot = getCombosCacheVersion();
-  combosCachePromise = getCombos().catch(() => []) as Promise<ComboLike[]>;
-  return combosCachePromise;
 }
 
 function normalizeAllowedConnectionIds(value: unknown): string[] | null {
@@ -1243,6 +1220,7 @@ async function handleChatImplementation(
       settings,
       allCombos,
       apiKeyAllowedConnections: apiKeyInfo?.allowedConnections ?? null,
+      apiKeyAllowedCombos: apiKeyInfo?.allowedCombos ?? null,
       relayOptions,
       signal,
       correlationId: reqId,
@@ -1259,6 +1237,7 @@ async function handleChatImplementation(
     // If combo exhausted all models, try the global fallback before giving up.
     if (
       !response.ok &&
+      !comboGraphContainsAgentProfile({ combo, allCombos }) &&
       [502, 503].includes(response.status) &&
       typeof (settings as any)?.globalFallbackModel === "string" &&
       (settings as any).globalFallbackModel.trim()
@@ -1532,7 +1511,9 @@ async function handleSingleModelChat(
       isModelAvailable: async () => true,
       log,
       settings: {},
-      allCombos: [],
+      allCombos: getAgentProjectionOwner(redirectCombo) ? await getCombosCachedForChat() : [],
+      apiKeyAllowedConnections: apiKeyInfo?.allowedConnections ?? null,
+      apiKeyAllowedCombos: apiKeyInfo?.allowedCombos ?? null,
       relayOptions: undefined,
       signal: clientRawRequest?.signal ?? request?.signal ?? null,
       // #9654 Wave 2: safety-net redirect — same per-target probe as the primary path.

@@ -1737,3 +1737,9 @@ Používáno v `open-sse/services/combo.ts` a `src/lib/quota/quotaScheduler.ts` 
 | Proměnná                        | Výchozí hodnota | Zdrojový soubor              | Popis                                                                                                                                                                                                                                                                 |
 | ------------------------------- | --------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`             | `open-sse/services/combo.ts` | Při hodnotě `1` přeskočí připojení, jejichž rozpočet tokenů pro dané časové okno (`rateLimitOverrides.tpm`, tabulka `provider_quota_state`) nemůže před odesláním pokrýt odhadované náklady požadavku. Pokud není nakonfigurován žádný rozpočet, požadavek se povolí. |
+
+### Agenti
+
+`AGENT_PROFILES_ENABLED=false`. Propojte role se stávajícími kombinacemi. Exportujte agenty pro nástroje svého klienta.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

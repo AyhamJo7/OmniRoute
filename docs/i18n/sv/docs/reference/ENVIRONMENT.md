@@ -1739,3 +1739,9 @@ Används av `open-sse/services/combo.ts` och `src/lib/quota/quotaScheduler.ts` f
 | Variabel                        | Standardvärde | Källfil                      | Beskrivning                                                                                                                                                                                                                                                                 |
 | ------------------------------- | ------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`           | `open-sse/services/combo.ts` | När värdet är `1` hoppas anslutningar över om deras tokenbudget per tidsfönster (`rateLimitOverrides.tpm`, tabellen `provider_quota_state`) inte täcker den uppskattade kostnaden för begäran före vidarebefordran. Tillåt som standard när ingen budget har konfigurerats. |
+
+### Agenter
+
+`AGENT_PROFILES_ENABLED=false`. Koppla roller till befintliga kombinationer. Exportera agenter för klientens verktyg.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

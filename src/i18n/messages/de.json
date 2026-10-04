@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Was GET /v1/models für diesen Schlüssel ausgibt. Eine Einschränkung der Liste ändert niemals, welche Modelle der Schlüssel aufrufen kann.",
     "catalogScopeAll": "Beides",
     "catalogScopeCombos": "Nur Kombos",
-    "catalogScopeModels": "Nur Modelle"
+    "catalogScopeModels": "Nur Modelle",
+    "featureFlagAgentProfilesEnabledDescription": "Verknüpfen Sie Rollen mit bestehenden Kombinationen. Exportieren Sie Agenten für die Werkzeuge Ihres Clients."
   },
   "contextRtk": {
     "title": "RTK-Engine",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Partnerlink",
     "dismissAriaLabel": "Schließen"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Deaktiviert die Generierung von Denkstufenvarianten (z. B. -low, -medium, -high) im /v1/models-Katalog."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Deaktiviert die Generierung von Denkstufenvarianten (z. B. -low, -medium, -high) im /v1/models-Katalog.",
+  "agentProfiles": {
+    "role": "Rolle",
+    "planner": "Planer",
+    "implementer": "Umsetzer",
+    "reviewer": "Prüfer",
+    "fixer": "Fehlerbeheber",
+    "researcher": "Rechercheur",
+    "custom": "Benutzerdefiniert",
+    "client": "Client",
+    "server": "Server",
+    "workspace": "Arbeitsbereich",
+    "help": "Verknüpfen Sie Rollen mit bestehenden Kombinationen. Exportieren Sie Agenten für die Werkzeuge Ihres Clients."
+  }
 }

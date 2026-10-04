@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Amit a GET /v1/models ennél a kulcsnál elérhetőként jelez. A lista szűkítése soha nem módosítja, hogy a kulcs mely modelleket hívhatja meg.",
     "catalogScopeAll": "Mindkettő",
     "catalogScopeCombos": "Csak kombinációk",
-    "catalogScopeModels": "Csak modellek"
+    "catalogScopeModels": "Csak modellek",
+    "featureFlagAgentProfilesEnabledDescription": "Kapcsolja a szerepeket meglévő kombinációkhoz. Exportáljon ügynököket a kliens eszközeihez."
   },
   "contextRtk": {
     "title": "RTK-motor",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Partnerlink",
     "dismissAriaLabel": "Bezárás"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Letiltja a gondolkodási szint szerinti változatok (pl. -low, -medium, -high) létrehozását a /v1/models katalógusban."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Letiltja a gondolkodási szint szerinti változatok (pl. -low, -medium, -high) létrehozását a /v1/models katalógusban.",
+  "agentProfiles": {
+    "role": "Szerep",
+    "planner": "Tervező",
+    "implementer": "Megvalósító",
+    "reviewer": "Ellenőr",
+    "fixer": "Javító",
+    "researcher": "Kutató",
+    "custom": "Egyéni",
+    "client": "Kliens",
+    "server": "Szerver",
+    "workspace": "Munkaterület",
+    "help": "Kapcsolja a szerepeket meglévő kombinációkhoz. Exportáljon ügynököket a kliens eszközeihez."
+  }
 }

@@ -1737,3 +1737,9 @@ Użat minn `open-sse/services/combo.ts` u `src/lib/quota/quotaScheduler.ts` għa
 | Varjabbli                       | Valur Predefinit | Fajl tas-Sors                | Deskrizzjoni                                                                                                                                                                                                                                                                       |
 | ------------------------------- | ---------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`              | `open-sse/services/combo.ts` | Meta jkun `1`, aqbeż il-konnessjonijiet li l-baġit tat-tokens tagħhom għal kull perjodu (`rateLimitOverrides.tpm`, tabella `provider_quota_state`) ma jiflaħx għall-ispiża stmata tat-talba qabel ma tintbagħat. Jippermetti l-ipproċessar jekk ma jkun ikkonfigurat l-ebda baġit. |
+
+### Aġenti
+
+`AGENT_PROFILES_ENABLED=false`. Qabbad ir-rwoli ma' kombinazzjonijiet eżistenti. Esporta aġenti għall-għodod tal-klijent tiegħek.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

@@ -12,6 +12,17 @@ export interface FeatureFlagDefinition {
 }
 
 export const FEATURE_FLAG_DEFINITIONS: FeatureFlagDefinition[] = [
+  {
+    key: "AGENT_PROFILES_ENABLED",
+    label: "Agent Profiles",
+    description: "Enable named agent profiles and client configuration exports",
+    descriptionI18nKey: "featureFlagAgentProfilesEnabledDescription",
+    category: "runtime",
+    defaultValue: "false",
+    type: "boolean",
+    requiresRestart: false,
+    warningLevel: "info",
+  },
   // ──────────────── Security (10) ────────────────
   {
     key: "REQUIRE_API_KEY",

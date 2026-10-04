@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Τι εμφανίζει το GET /v1/models για αυτό το κλειδί. Ο περιορισμός της λίστας δεν αλλάζει ποτέ τα μοντέλα που μπορεί να καλέσει το κλειδί.",
     "catalogScopeAll": "Και τα δύο",
     "catalogScopeCombos": "Μόνο συνδυασμοί",
-    "catalogScopeModels": "Μόνο μοντέλα"
+    "catalogScopeModels": "Μόνο μοντέλα",
+    "featureFlagAgentProfilesEnabledDescription": "Συνδέστε ρόλους με υπάρχοντες συνδυασμούς. Εξάγετε πράκτορες για τα εργαλεία του πελάτη σας."
   },
   "contextRtk": {
     "title": "Μηχανή RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Σύνδεσμος συνεργάτη",
     "dismissAriaLabel": "Κλείσιμο"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Απενεργοποίηση της δημιουργίας παραλλαγών επιπέδου σκέψης (π.χ. -low, -medium, -high) στον κατάλογο /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Απενεργοποίηση της δημιουργίας παραλλαγών επιπέδου σκέψης (π.χ. -low, -medium, -high) στον κατάλογο /v1/models.",
+  "agentProfiles": {
+    "role": "Ρόλος",
+    "planner": "Σχεδιαστής",
+    "implementer": "Υλοποιητής",
+    "reviewer": "Ελεγκτής",
+    "fixer": "Διορθωτής",
+    "researcher": "Ερευνητής",
+    "custom": "Προσαρμοσμένο",
+    "client": "Πελάτης",
+    "server": "Διακομιστής",
+    "workspace": "Χώρος εργασίας",
+    "help": "Συνδέστε ρόλους με υπάρχοντες συνδυασμούς. Εξάγετε πράκτορες για τα εργαλεία του πελάτη σας."
+  }
 }

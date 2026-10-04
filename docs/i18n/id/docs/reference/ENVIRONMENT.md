@@ -1738,3 +1738,9 @@ Digunakan oleh `open-sse/services/combo.ts` dan `src/lib/quota/quotaScheduler.ts
 | Variabel                        | Default | Berkas Sumber                | Deskripsi                                                                                                                                                                                                                                              |
 | ------------------------------- | ------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`     | `open-sse/services/combo.ts` | Jika `1`, lewati koneksi yang anggaran token per jendelanya (`rateLimitOverrides.tpm`, tabel `provider_quota_state`) tidak dapat menanggung perkiraan biaya permintaan sebelum pengiriman. Tetap lanjutkan jika tidak ada anggaran yang dikonfigurasi. |
+
+### Agen
+
+`AGENT_PROFILES_ENABLED=false`. Hubungkan peran ke kombinasi yang ada. Ekspor agen untuk alat klien Anda.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

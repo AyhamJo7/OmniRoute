@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Kile ambacho GET /v1/models hutangaza kwa ufunguo huu. Kupunguza orodha hakubadilishi kamwe kile ambacho ufunguo unaweza kuita.",
     "catalogScopeAll": "Zote mbili",
     "catalogScopeCombos": "Mijumuisho pekee",
-    "catalogScopeModels": "Modeli pekee"
+    "catalogScopeModels": "Modeli pekee",
+    "featureFlagAgentProfilesEnabledDescription": "Unganisha majukumu na michanganyiko iliyopo. Hamisha mawakala kwa zana za mteja wako."
   },
   "contextRtk": {
     "title": "Injini ya RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Kiungo cha mshirika",
     "dismissAriaLabel": "Funga"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Zima uundaji wa vibadala vya kiwango cha kufikiri (k.m. -low, -medium, -high) katika katalogi ya /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Zima uundaji wa vibadala vya kiwango cha kufikiri (k.m. -low, -medium, -high) katika katalogi ya /v1/models.",
+  "agentProfiles": {
+    "role": "Jukumu",
+    "planner": "Mpangaji",
+    "implementer": "Mtekelezaji",
+    "reviewer": "Mkaguzi",
+    "fixer": "Mrekebishaji",
+    "researcher": "Mtafiti",
+    "custom": "Maalum",
+    "client": "Mteja",
+    "server": "Seva",
+    "workspace": "Eneo la kazi",
+    "help": "Unganisha majukumu na michanganyiko iliyopo. Hamisha mawakala kwa zana za mteja wako."
+  }
 }

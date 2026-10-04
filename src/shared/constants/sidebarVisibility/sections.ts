@@ -64,6 +64,13 @@ const OMNI_PROXY_ITEMS: readonly SidebarItemDefinition[] = [
     icon: "layers",
   },
   {
+    id: "agent-profiles",
+    href: "/dashboard/agent-profiles",
+    i18nKey: "agents",
+    icon: "smart_toy",
+    featureFlagKey: "AGENT_PROFILES_ENABLED",
+  },
+  {
     id: "combos-live",
     href: "/dashboard/combos/live",
     i18nKey: "combosLive",

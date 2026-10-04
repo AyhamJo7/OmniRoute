@@ -1,0 +1,101 @@
+name: Fork Integration
+
+on:
+  pull_request:
+    branches: ["fork/agent-profiles-v3.8.51"]
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fork-integration-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  OMNIROUTE_SKIP_SYSTEM_TRUST: "1"
+  DISABLE_SQLITE_AUTO_BACKUP: "true"
+  NEXT_TELEMETRY_DISABLED: "1"
+  BASE_REF: v3.8.51
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - run: npm rebuild better-sqlite3
+      - name: Lint and types
+        run: |
+          npm run lint
+          npm run typecheck:core
+          npm run typecheck:noimplicit:core
+          npm run check:dashboard-typecheck
+          npm run check:open-sse-typecheck
+      - name: Repository invariants
+        run: |
+          for gate in check:node-runtime check:native-deps check:build-scope check:cycles check:route-validation:t06 check:any-budget:t11 check:docs-sync check:docs-frontmatter check:docs-counts check:env-doc-sync check:deprecated-versions check:doc-links check:fabricated-docs check:pack-policy check:cli-i18n check:openapi-coverage check:openapi-security-tiers check:openapi-routes check:api-docs-refs check:model-lifecycle check:provider-assets check:provider-order-sync check:provider-asset-provenance check:radar-sentinels check:fetch-targets check:deps check:file-size check:tracked-artifacts check:test-masking check:test-runner-api check:error-helper check:routing-error-guard check:migration-numbering check:public-creds check:db-rules check:docs-symbols check:route-guard-membership check:test-discovery check:mutation-test-coverage check:complexity-ratchets check:ratchet-bank check:lockfile check:vitest-exclusions i18n:check-new-keys i18n:check-keys i18n:check-ui-coverage i18n:check-value-drift; do
+            npm run "$gate"
+          done
+
+  unit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ["1/4", "2/4", "3/4", "4/4"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - run: npm rebuild better-sqlite3
+      - name: Initialize the locked alternate runtime binary
+        run: node node_modules/bun/install.js
+      - name: Canonical Node suites, including dashboard and serial tests
+        run: npm run test:unit:ci:shard
+        env:
+          TEST_SHARD: ${{ matrix.shard }}
+
+  other-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        suite: ["test:vitest", "test:vitest:ui", "test:integration", "test:ecosystem"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - run: npm rebuild better-sqlite3
+      - name: Install the pinned client binary from its locked optional dependency
+        if: matrix.suite == 'test:integration'
+        run: node node_modules/opencode-ai/postinstall.mjs
+      - name: Canonical suite
+        run: npm run "$FORK_TEST_SUITE"
+        env:
+          FORK_TEST_SUITE: ${{ matrix.suite }}
+
+# Production build, browser tests and aggregate coverage require separately recorded
+# local evidence. Upstream documents that hosted 7 GiB runners cannot build this tree.
+# This workflow uses no upstream self-hosted pool, production secrets or deployment.

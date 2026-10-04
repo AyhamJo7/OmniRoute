@@ -1798,3 +1798,9 @@ Used by `open-sse/services/combo.ts` and `src/lib/quota/quotaScheduler.ts` for p
 | Variable                          | Default  | Source File                       | Description                                                                                                      |
 | --------------------------------- | -------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING`   | `0`      | `open-sse/services/combo.ts`      | When `1`, skip connections whose per-window token budget (`rateLimitOverrides.tpm`, table `provider_quota_state`) cannot afford the estimated request cost before dispatch. Fail-open when no budget configured. |
+
+### Agent profiles
+
+| Variable | Default | Description |
+| --- | --- | --- |
+| `AGENT_PROFILES_ENABLED` | `false` | Enable named role profiles, management APIs, the Agents dashboard and client exports. A feature-flag database override takes precedence. Disabling the flag also blocks previously reserved agent aliases at dispatch. |

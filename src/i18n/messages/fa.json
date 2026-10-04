@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "مواردی که GET /v1/models برای این کلید اعلام میکند. محدود کردن فهرست هرگز مدلهایی را که کلید میتواند فراخوانی کند تغییر نمیدهد.",
     "catalogScopeAll": "هر دو",
     "catalogScopeCombos": "فقط ترکیبها",
-    "catalogScopeModels": "فقط مدلها"
+    "catalogScopeModels": "فقط مدلها",
+    "featureFlagAgentProfilesEnabledDescription": "نقش‌ها را به ترکیب‌های موجود متصل کنید. عامل‌ها را برای ابزارهای کلاینت خود صادر کنید."
   },
   "contextRtk": {
     "title": "موتور RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "پیوند شریک",
     "dismissAriaLabel": "بستن"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "تولید گونههای سطح تفکر (برای مثال -low، -medium و -high) را در کاتالوگ /v1/models غیرفعال کنید."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "تولید گونههای سطح تفکر (برای مثال -low، -medium و -high) را در کاتالوگ /v1/models غیرفعال کنید.",
+  "agentProfiles": {
+    "role": "نقش",
+    "planner": "برنامه‌ریز",
+    "implementer": "پیاده‌ساز",
+    "reviewer": "بازبین",
+    "fixer": "اصلاح‌کننده",
+    "researcher": "پژوهشگر",
+    "custom": "سفارشی",
+    "client": "کلاینت",
+    "server": "سرور",
+    "workspace": "فضای کاری",
+    "help": "نقش‌ها را به ترکیب‌های موجود متصل کنید. عامل‌ها را برای ابزارهای کلاینت خود صادر کنید."
+  }
 }

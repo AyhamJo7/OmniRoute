@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Шта GET /v1/models приказује за овај кључ. Сужавање листе никада не мења шта кључ може да позове.",
     "catalogScopeAll": "Оба",
     "catalogScopeCombos": "Само комбинације",
-    "catalogScopeModels": "Само модели"
+    "catalogScopeModels": "Само модели",
+    "featureFlagAgentProfilesEnabledDescription": "Повежите улоге са постојећим комбинацијама. Извезите агенте за алате свог клијента."
   },
   "contextRtk": {
     "title": "RTK Engine",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Партнерски линк",
     "dismissAriaLabel": "Затвори"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Онемогући генерисање варијанти нивоа размишљања (нпр. -low, -medium, -high) у каталогу /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Онемогући генерисање варијанти нивоа размишљања (нпр. -low, -medium, -high) у каталогу /v1/models.",
+  "agentProfiles": {
+    "role": "Улога",
+    "planner": "Планер",
+    "implementer": "Извршилац",
+    "reviewer": "Рецензент",
+    "fixer": "Поправљач",
+    "researcher": "Истраживач",
+    "custom": "Прилагођено",
+    "client": "Клијент",
+    "server": "Сервер",
+    "workspace": "Радни простор",
+    "help": "Повежите улоге са постојећим комбинацијама. Извезите агенте за алате свог клијента."
+  }
 }

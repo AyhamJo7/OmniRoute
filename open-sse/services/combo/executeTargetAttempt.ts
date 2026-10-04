@@ -713,9 +713,11 @@ export async function executeTargetAttempt(opts: {
               : null);
         }
       } catch {
+        // no-effect: retain the upstream failure; header/prose retry hints remain available.
         logRetryHintUnreadable(deps.log, "COMBO", modelStr, result.status, "unparseable body");
       }
     } catch {
+      // no-effect: retain the upstream failure when its body cannot be cloned.
       logRetryHintUnreadable(deps.log, "COMBO", modelStr, result.status, "clone failed");
     }
     retryAfter ||= readProseRetryAfter(bodyText); // #13672 opt-in prose retry hints

@@ -1740,3 +1740,9 @@ OmniConductor hub görevlerini yerel A2A TaskManager'a (`src/lib/conductor/`) ya
 | Değişken                        | Varsayılan | Kaynak Dosya                 | Açıklama                                                                                                                                                                                                                                 |
 | ------------------------------- | ---------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`        | `open-sse/services/combo.ts` | `1` olduğunda, pencere başına belirteç bütçesi (`rateLimitOverrides.tpm`, `provider_quota_state` tablosu) tahmini istek maliyetini gönderimden önce karşılayamayan bağlantıları atlar. Yapılandırılmış bütçe yoksa açık geçiş uygulanır. |
+
+### Ajanlar
+
+`AGENT_PROFILES_ENABLED=false`. Rolleri mevcut kombinasyonlara bağlayın. İstemcinizin araçları için aracıları dışa aktarın.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Lo que GET /v1/models anuncia para esta clave. Limitar la lista nunca cambia los modelos que la clave puede invocar.",
     "catalogScopeAll": "Ambos",
     "catalogScopeCombos": "Solo combinaciones",
-    "catalogScopeModels": "Solo modelos"
+    "catalogScopeModels": "Solo modelos",
+    "featureFlagAgentProfilesEnabledDescription": "Vincula roles a combinaciones existentes. Exporta agentes para las herramientas de tu cliente."
   },
   "contextRtk": {
     "title": "Motor RTK",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Enlace del socio",
     "dismissAriaLabel": "Cerrar"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Desactiva la generación de variantes del nivel de razonamiento (p. ej., -low, -medium, -high) en el catálogo /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Desactiva la generación de variantes del nivel de razonamiento (p. ej., -low, -medium, -high) en el catálogo /v1/models.",
+  "agentProfiles": {
+    "role": "Rol",
+    "planner": "Planificador",
+    "implementer": "Implementador",
+    "reviewer": "Revisor",
+    "fixer": "Corrector",
+    "researcher": "Investigador",
+    "custom": "Personalizado",
+    "client": "Cliente",
+    "server": "Servidor",
+    "workspace": "Espacio de trabajo",
+    "help": "Vincula roles a combinaciones existentes. Exporta agentes para las herramientas de tu cliente."
+  }
 }

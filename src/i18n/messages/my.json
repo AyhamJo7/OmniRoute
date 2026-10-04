@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "ဤ key အတွက် GET /v1/models က ဖော်ပြပေးသည့်အရာ။ စာရင်းကို ကျဉ်းမြောင်းစေခြင်းသည် key က ခေါ်ဆိုနိုင်သည့်အရာကို မည်သည့်အခါမျှ ပြောင်းလဲစေမည်မဟုတ်ပါ။",
     "catalogScopeAll": "နှစ်မျိုးလုံး",
     "catalogScopeCombos": "ပေါင်းစပ်မှုများသာ",
-    "catalogScopeModels": "Models များသာ"
+    "catalogScopeModels": "Models များသာ",
+    "featureFlagAgentProfilesEnabledDescription": "အခန်းကဏ္ဍများကို ရှိပြီးသားပေါင်းစပ်မှုများနှင့် ချိတ်ဆက်ပါ။ သင့်အသုံးပြုသူပရိုဂရမ်၏ ကိရိယာများအတွက် အေးဂျင့်များကို ထုတ်ယူပါ။"
   },
   "contextRtk": {
     "title": "RTK Engine",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "မိတ်ဖက်လင့်ခ်",
     "dismissAriaLabel": "ပိတ်ရန်"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models catalog တွင် thinking level မူကွဲများ (ဥပမာ -low, -medium, -high) ဖန်တီးခြင်းကို ပိတ်ပါ။"
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models catalog တွင် thinking level မူကွဲများ (ဥပမာ -low, -medium, -high) ဖန်တီးခြင်းကို ပိတ်ပါ။",
+  "agentProfiles": {
+    "role": "အခန်းကဏ္ဍ",
+    "planner": "အစီအစဉ်ရေးသူ",
+    "implementer": "အကောင်အထည်ဖော်သူ",
+    "reviewer": "ပြန်လည်သုံးသပ်သူ",
+    "fixer": "ပြုပြင်သူ",
+    "researcher": "သုတေသီ",
+    "custom": "စိတ်ကြိုက်",
+    "client": "အသုံးပြုသူပရိုဂရမ်",
+    "server": "ဆာဗာ",
+    "workspace": "အလုပ်နေရာ",
+    "help": "အခန်းကဏ္ဍများကို ရှိပြီးသားပေါင်းစပ်မှုများနှင့် ချိတ်ဆက်ပါ။ သင့်အသုံးပြုသူပရိုဂရမ်၏ ကိရိယာများအတွက် အေးဂျင့်များကို ထုတ်ယူပါ။"
+  }
 }

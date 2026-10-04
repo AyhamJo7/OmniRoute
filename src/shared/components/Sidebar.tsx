@@ -231,6 +231,19 @@ export default function Sidebar({
       })
       .catch(() => {});
 
+    fetch("/api/settings/feature-flags")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        const flag = Array.isArray(data?.flags)
+          ? data.flags.find((entry: { key?: string }) => entry.key === "AGENT_PROFILES_ENABLED")
+          : null;
+        setFeatureFlags((prev) => ({
+          ...prev,
+          AGENT_PROFILES_ENABLED: ["true", "1", "yes"].includes(flag?.effectiveValue),
+        }));
+      })
+      .catch(() => {});
+
     const handleSettingsUpdated = (event: Event) => {
       const detail = (event as CustomEvent<Record<string, unknown>>).detail || {};
       if ("debugMode" in detail) setShowDebug(detail.debugMode === true);

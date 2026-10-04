@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "এই কী-এর জন্য GET /v1/models যা প্রদর্শন করে। তালিকা সীমিত করলেও কী-টি কী কল করতে পারবে তা কখনোই পরিবর্তিত হয় না।",
     "catalogScopeAll": "উভয়ই",
     "catalogScopeCombos": "শুধু কম্বো",
-    "catalogScopeModels": "শুধু মডেল"
+    "catalogScopeModels": "শুধু মডেল",
+    "featureFlagAgentProfilesEnabledDescription": "বিদ্যমান কম্বোর সঙ্গে ভূমিকা যুক্ত করুন। আপনার ক্লায়েন্টের সরঞ্জামের জন্য এজেন্ট রপ্তানি করুন।"
   },
   "contextRtk": {
     "title": "RTK ইঞ্জিন",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "অংশীদার লিঙ্ক",
     "dismissAriaLabel": "বন্ধ করুন"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models ক্যাটালগে চিন্তার স্তরের ভ্যারিয়েন্ট (যেমন -low, -medium, -high) তৈরি করা বন্ধ করুন।"
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models ক্যাটালগে চিন্তার স্তরের ভ্যারিয়েন্ট (যেমন -low, -medium, -high) তৈরি করা বন্ধ করুন।",
+  "agentProfiles": {
+    "role": "ভূমিকা",
+    "planner": "পরিকল্পনাকারী",
+    "implementer": "বাস্তবায়নকারী",
+    "reviewer": "পর্যালোচক",
+    "fixer": "সংশোধনকারী",
+    "researcher": "গবেষক",
+    "custom": "কাস্টম",
+    "client": "ক্লায়েন্ট",
+    "server": "সার্ভার",
+    "workspace": "কর্মক্ষেত্র",
+    "help": "বিদ্যমান কম্বোর সঙ্গে ভূমিকা যুক্ত করুন। আপনার ক্লায়েন্টের সরঞ্জামের জন্য এজেন্ট রপ্তানি করুন।"
+  }
 }

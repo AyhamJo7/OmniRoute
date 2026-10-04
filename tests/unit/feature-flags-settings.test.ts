@@ -50,7 +50,8 @@ const {
 // per-address 429, default off) takes the registry to 79.
 // PROXY_POOL_SHARED_EGRESS_ORDER (shared-egress pool ordering, default off)
 // takes it to 80.
-const EXPECTED_FEATURE_FLAG_COUNT = 80;
+// AGENT_PROFILES_ENABLED adds one opt-in registry entry.
+const EXPECTED_FEATURE_FLAG_COUNT = 81;
 
 // ──────────────────────────────────────────────────────
 // Test group 1 — Flag definitions registry

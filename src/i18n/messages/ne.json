@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "यस कुञ्जीका लागि GET /v1/models ले के देखाउँछ। सूची सीमित गर्दा पनि कुञ्जीले कल गर्न सक्ने कुरामा कहिल्यै परिवर्तन हुँदैन।",
     "catalogScopeAll": "दुवै",
     "catalogScopeCombos": "कम्बोहरू मात्र",
-    "catalogScopeModels": "मोडेलहरू मात्र"
+    "catalogScopeModels": "मोडेलहरू मात्र",
+    "featureFlagAgentProfilesEnabledDescription": "भूमिकाहरूलाई विद्यमान कम्बोसँग जोड्नुहोस्। आफ्नो क्लाइन्टका उपकरणहरूका लागि एजेन्ट निर्यात गर्नुहोस्।"
   },
   "contextRtk": {
     "title": "RTK इन्जिन",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "साझेदार लिङ्क",
     "dismissAriaLabel": "बन्द गर्नुहोस्"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models क्याटलगमा सोचाइ स्तरका भेरियन्टहरू (जस्तै -low, -medium, -high) उत्पन्न गर्ने सुविधा निष्क्रिय गर्नुहोस्।"
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models क्याटलगमा सोचाइ स्तरका भेरियन्टहरू (जस्तै -low, -medium, -high) उत्पन्न गर्ने सुविधा निष्क्रिय गर्नुहोस्।",
+  "agentProfiles": {
+    "role": "भूमिका",
+    "planner": "योजनाकार",
+    "implementer": "कार्यान्वयनकर्ता",
+    "reviewer": "समीक्षक",
+    "fixer": "सुधारकर्ता",
+    "researcher": "अनुसन्धानकर्ता",
+    "custom": "अनुकूलित",
+    "client": "क्लाइन्ट",
+    "server": "सर्भर",
+    "workspace": "कार्यक्षेत्र",
+    "help": "भूमिकाहरूलाई विद्यमान कम्बोसँग जोड्नुहोस्। आफ्नो क्लाइन्टका उपकरणहरूका लागि एजेन्ट निर्यात गर्नुहोस्।"
+  }
 }

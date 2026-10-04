@@ -1741,3 +1741,9 @@ Ginagamit ng `open-sse/services/combo.ts` at `src/lib/quota/quotaScheduler.ts` p
 | Variable                        | Default | Source File                  | Paglalarawan                                                                                                                                                                                                                                                        |
 | ------------------------------- | ------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`     | `open-sse/services/combo.ts` | Kapag `1`, laktawan ang mga koneksiyong hindi kayang tustusan ng token budget sa bawat window (`rateLimitOverrides.tpm`, talahanayang `provider_quota_state`) ang tinatayang gastos ng request bago ang dispatch. Magpatuloy kahit walang naka-configure na budget. |
+
+### Mga Agent
+
+`AGENT_PROFILES_ENABLED=false`. Iugnay ang mga tungkulin sa kasalukuyang mga combo. I-export ang mga ahente para sa mga tool ng iyong kliyente.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

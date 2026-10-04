@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "ما تعرضه GET /v1/models لهذا المفتاح. لا يؤدي تضييق القائمة مطلقًا إلى تغيير ما يمكن للمفتاح استدعاؤه.",
     "catalogScopeAll": "كلاهما",
     "catalogScopeCombos": "التركيبات فقط",
-    "catalogScopeModels": "النماذج فقط"
+    "catalogScopeModels": "النماذج فقط",
+    "featureFlagAgentProfilesEnabledDescription": "اربط الأدوار بمجموعات النماذج الحالية. صدّر الوكلاء لأدوات العميل."
   },
   "contextRtk": {
     "title": "محرك آر تي كيه",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "رابط الشريك",
     "dismissAriaLabel": "إغلاق"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "تعطيل إنشاء متغيرات مستوى التفكير (مثل -low و-medium و-high) في كتالوج /v1/models."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "تعطيل إنشاء متغيرات مستوى التفكير (مثل -low و-medium و-high) في كتالوج /v1/models.",
+  "agentProfiles": {
+    "role": "الدور",
+    "planner": "المخطط",
+    "implementer": "المنفذ",
+    "reviewer": "المراجع",
+    "fixer": "مصلح الأخطاء",
+    "researcher": "الباحث",
+    "custom": "مخصص",
+    "client": "العميل",
+    "server": "الخادم",
+    "workspace": "مساحة العمل",
+    "help": "اربط الأدوار بمجموعات النماذج الحالية. صدّر الوكلاء لأدوات العميل."
+  }
 }

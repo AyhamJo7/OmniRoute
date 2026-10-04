@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "GET /v1/models 針對此金鑰所列出的內容。縮小列表範圍絕不會變更此金鑰可呼叫的模型。",
     "catalogScopeAll": "兩者",
     "catalogScopeCombos": "僅組合",
-    "catalogScopeModels": "僅模型"
+    "catalogScopeModels": "僅模型",
+    "featureFlagAgentProfilesEnabledDescription": "將角色連結至現有組合。匯出代理以供用戶端工具使用。"
   },
   "contextRtk": {
     "title": "RTK 引擎",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "合作夥伴連結",
     "dismissAriaLabel": "關閉"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "停用在 /v1/models 目錄中產生思考層級變體（例如 -low、-medium、-high）。"
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "停用在 /v1/models 目錄中產生思考層級變體（例如 -low、-medium、-high）。",
+  "agentProfiles": {
+    "role": "角色",
+    "planner": "規劃者",
+    "implementer": "實作者",
+    "reviewer": "審查者",
+    "fixer": "修復者",
+    "researcher": "研究者",
+    "custom": "自訂",
+    "client": "用戶端",
+    "server": "伺服器",
+    "workspace": "工作區",
+    "help": "將角色連結至現有組合。匯出代理以供用戶端工具使用。"
+  }
 }

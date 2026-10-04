@@ -1736,3 +1736,9 @@ Tomhaltóir SSE fadsaolach a dhéanann tascanna mhoil OmniConductor a mhacasamhl
 | Athróg                          | Réamhshocrú | Comhad Foinseach             | Cur Síos                                                                                                                                                                                                                                                                                          |
 | ------------------------------- | ----------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`         | `open-sse/services/combo.ts` | Nuair is `1` é, scipeáil naisc nach bhfuil a mbuiséad comharthaí in aghaidh na fuinneoige (`rateLimitOverrides.tpm`, tábla `provider_quota_state`) in ann costas measta an iarratais a íoc roimh sheoladh. Lean ar aghaidh má theipeann ar an tseiceáil nuair nach bhfuil aon bhuiséad cumraithe. |
+
+### Gníomhairí
+
+`AGENT_PROFILES_ENABLED=false`. Ceangail róil leis na teaglamaí atá ann. Easpórtáil gníomhairí d'uirlisí do chliaint.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

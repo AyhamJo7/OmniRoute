@@ -1739,3 +1739,9 @@ Naudojama `open-sse/services/combo.ts` ir `src/lib/quota/quotaScheduler.ts` žet
 | Kintamasis                      | Numatytoji reikšmė | Šaltinio failas              | Aprašas                                                                                                                                                                                                                                                                |
 | ------------------------------- | ------------------ | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`                | `open-sse/services/combo.ts` | Kai nustatyta `1`, prieš siunčiant užklausą praleidžiami ryšiai, kurių kiekvieno lango žetonų biudžeto (`rateLimitOverrides.tpm`, lentelė `provider_quota_state`) nepakanka apskaičiuotai užklausos kainai padengti. Jei biudžetas nesukonfigūruotas, leidžiama tęsti. |
+
+### Agentai
+
+`AGENT_PROFILES_ENABLED=false`. Susiekite vaidmenis su esamais deriniais. Eksportuokite agentus savo kliento įrankiams.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

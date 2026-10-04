@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "GET /v1/models 为此密钥公开的内容。缩小列表范围绝不会改变此密钥可以调用的模型。",
     "catalogScopeAll": "两者",
     "catalogScopeCombos": "仅组合",
-    "catalogScopeModels": "仅模型"
+    "catalogScopeModels": "仅模型",
+    "featureFlagAgentProfilesEnabledDescription": "将角色关联到现有组合。导出代理以供客户端工具使用。"
   },
   "contextRtk": {
     "title": "命令输出过滤引擎",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "合作伙伴链接",
     "dismissAriaLabel": "关闭"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "禁用在 /v1/models 目录中生成思考级别变体（例如 -low、-medium、-high）。"
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "禁用在 /v1/models 目录中生成思考级别变体（例如 -low、-medium、-high）。",
+  "agentProfiles": {
+    "role": "角色",
+    "planner": "规划者",
+    "implementer": "实现者",
+    "reviewer": "审查者",
+    "fixer": "修复者",
+    "researcher": "研究者",
+    "custom": "自定义",
+    "client": "客户端",
+    "server": "服务器",
+    "workspace": "工作区",
+    "help": "将角色关联到现有组合。导出代理以供客户端工具使用。"
+  }
 }

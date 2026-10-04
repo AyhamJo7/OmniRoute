@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "Mida GET /v1/models selle võtme kohta avaldab. Loendi kitsendamine ei muuda kunagi seda, milliseid mudeleid võti saab kutsuda.",
     "catalogScopeAll": "Mõlemad",
     "catalogScopeCombos": "Ainult kombinatsioonid",
-    "catalogScopeModels": "Ainult mudelid"
+    "catalogScopeModels": "Ainult mudelid",
+    "featureFlagAgentProfilesEnabledDescription": "Siduge rollid olemasolevate kombinatsioonidega. Eksportige agendid oma kliendi tööriistade jaoks."
   },
   "contextRtk": {
     "title": "RTK Engine",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "Partnerlink",
     "dismissAriaLabel": "Sulge"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Keela mõtlemistaseme variantide (nt -low, -medium, -high) loomine /v1/models kataloogis."
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "Keela mõtlemistaseme variantide (nt -low, -medium, -high) loomine /v1/models kataloogis.",
+  "agentProfiles": {
+    "role": "Roll",
+    "planner": "Planeerija",
+    "implementer": "Teostaja",
+    "reviewer": "Ülevaataja",
+    "fixer": "Parandaja",
+    "researcher": "Uurija",
+    "custom": "Kohandatud",
+    "client": "Klient",
+    "server": "Server",
+    "workspace": "Tööruum",
+    "help": "Siduge rollid olemasolevate kombinatsioonidega. Eksportige agendid oma kliendi tööriistade jaoks."
+  }
 }

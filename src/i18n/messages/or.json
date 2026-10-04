@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "ଏହି କୀ ପାଇଁ GET /v1/models କ’ଣ ପ୍ରଦର୍ଶିତ କରେ। ତାଲିକାକୁ ସୀମିତ କଲେ ମଧ୍ୟ କୀ କେଉଁ ମଡେଲ୍କୁ କଲ୍ କରିପାରିବ ତାହା କେବେ ବଦଳେ ନାହିଁ।",
     "catalogScopeAll": "ଉଭୟ",
     "catalogScopeCombos": "କେବଳ କମ୍ବୋଗୁଡ଼ିକ",
-    "catalogScopeModels": "କେବଳ ମଡେଲ୍ଗୁଡ଼ିକ"
+    "catalogScopeModels": "କେବଳ ମଡେଲ୍ଗୁଡ଼ିକ",
+    "featureFlagAgentProfilesEnabledDescription": "ଭୂମିକାଗୁଡ଼ିକୁ ବର୍ତ୍ତମାନର କମ୍ବୋ ସହ ଯୋଡ଼ନ୍ତୁ। ଆପଣଙ୍କ କ୍ଲାଏଣ୍ଟର ଉପକରଣ ପାଇଁ ଏଜେଣ୍ଟ ରପ୍ତାନି କରନ୍ତୁ।"
   },
   "contextRtk": {
     "title": "RTK ଇଞ୍ଜିନ୍",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "ସହଭାଗୀ ଲିଙ୍କ୍",
     "dismissAriaLabel": "ବନ୍ଦ କରନ୍ତୁ"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models କ୍ୟାଟାଲଗ୍ରେ ଚିନ୍ତନ ସ୍ତର ଭାରିଆଣ୍ଟଗୁଡ଼ିକର (ଯଥା -low, -medium, -high) ସୃଷ୍ଟିକୁ ଅକ୍ଷମ କରନ୍ତୁ।"
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models କ୍ୟାଟାଲଗ୍ରେ ଚିନ୍ତନ ସ୍ତର ଭାରିଆଣ୍ଟଗୁଡ଼ିକର (ଯଥା -low, -medium, -high) ସୃଷ୍ଟିକୁ ଅକ୍ଷମ କରନ୍ତୁ।",
+  "agentProfiles": {
+    "role": "ଭୂମିକା",
+    "planner": "ଯୋଜନାକାରୀ",
+    "implementer": "କାର୍ଯ୍ୟକାରୀ",
+    "reviewer": "ସମୀକ୍ଷକ",
+    "fixer": "ସଂଶୋଧକ",
+    "researcher": "ଗବେଷକ",
+    "custom": "କଷ୍ଟମ୍",
+    "client": "କ୍ଲାଏଣ୍ଟ",
+    "server": "ସର୍ଭର୍",
+    "workspace": "କାର୍ଯ୍ୟକ୍ଷେତ୍ର",
+    "help": "ଭୂମିକାଗୁଡ଼ିକୁ ବର୍ତ୍ତମାନର କମ୍ବୋ ସହ ଯୋଡ଼ନ୍ତୁ। ଆପଣଙ୍କ କ୍ଲାଏଣ୍ଟର ଉପକରଣ ପାଇଁ ଏଜେଣ୍ଟ ରପ୍ତାନି କରନ୍ତୁ।"
+  }
 }

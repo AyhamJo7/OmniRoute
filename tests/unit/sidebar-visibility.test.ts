@@ -46,6 +46,7 @@ test("primary sidebar items place limits after cache", () => {
       "model-catalog",
       "embedded-services",
       "combos",
+      "agent-profiles",
       "combos-live",
       "quota",
       "costs-quota-share",

@@ -1737,3 +1737,9 @@ Izmanto `open-sse/services/combo.ts` un `src/lib/quota/quotaScheduler.ts`, lai p
 | Mainīgais                       | Noklusējums | Avota fails                  | Apraksts                                                                                                                                                                                                                                                    |
 | ------------------------------- | ----------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`         | `open-sse/services/combo.ts` | Ja vērtība ir `1`, izlaiž savienojumus, kuru katra perioda marķieru budžets (`rateLimitOverrides.tpm`, tabula `provider_quota_state`) pirms nosūtīšanas nevar segt aplēstās pieprasījuma izmaksas. Ja budžets nav konfigurēts, pieprasījums netiek bloķēts. |
+
+### Aģenti
+
+`AGENT_PROFILES_ENABLED=false`. Saistiet lomas ar esošajām kombinācijām. Eksportējiet aģentus sava klienta rīkiem.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)

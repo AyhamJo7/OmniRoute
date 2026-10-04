@@ -8455,7 +8455,8 @@
     "catalogScopeDesc": "ਇਸ ਕੁੰਜੀ ਲਈ GET /v1/models ਕੀ ਦਰਸਾਉਂਦਾ ਹੈ। ਸੂਚੀ ਨੂੰ ਸੀਮਤ ਕਰਨ ਨਾਲ ਇਹ ਕਦੇ ਨਹੀਂ ਬਦਲਦਾ ਕਿ ਕੁੰਜੀ ਕਿਹੜੇ ਮਾਡਲ ਨੂੰ ਕਾਲ ਕਰ ਸਕਦੀ ਹੈ।",
     "catalogScopeAll": "ਦੋਵੇਂ",
     "catalogScopeCombos": "ਸਿਰਫ਼ ਕੌਂਬੋ",
-    "catalogScopeModels": "ਸਿਰਫ਼ ਮਾਡਲ"
+    "catalogScopeModels": "ਸਿਰਫ਼ ਮਾਡਲ",
+    "featureFlagAgentProfilesEnabledDescription": "ਭੂਮਿਕਾਵਾਂ ਨੂੰ ਮੌਜੂਦਾ ਕੰਬੋ ਨਾਲ ਜੋੜੋ। ਆਪਣੇ ਕਲਾਇੰਟ ਦੇ ਟੂਲਾਂ ਲਈ ਏਜੰਟ ਨਿਰਯਾਤ ਕਰੋ।"
   },
   "contextRtk": {
     "title": "RTK ਇੰਜਣ",
@@ -14440,5 +14441,18 @@
     "partnerLinkNote": "ਭਾਈਵਾਲ ਲਿੰਕ",
     "dismissAriaLabel": "ਬੰਦ ਕਰੋ"
   },
-  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models ਕੈਟਾਲਾਗ ਵਿੱਚ ਸੋਚਣ ਦੇ ਪੱਧਰ ਦੇ ਰੂਪਾਂ (ਉਦਾਹਰਨ ਲਈ -low, -medium, -high) ਦੀ ਰਚਨਾ ਨੂੰ ਅਯੋਗ ਕਰੋ।"
+  "featureFlagOmnirouteDisableThinkingLevelVariantsDescription": "/v1/models ਕੈਟਾਲਾਗ ਵਿੱਚ ਸੋਚਣ ਦੇ ਪੱਧਰ ਦੇ ਰੂਪਾਂ (ਉਦਾਹਰਨ ਲਈ -low, -medium, -high) ਦੀ ਰਚਨਾ ਨੂੰ ਅਯੋਗ ਕਰੋ।",
+  "agentProfiles": {
+    "role": "ਭੂਮਿਕਾ",
+    "planner": "ਯੋਜਨਾਕਾਰ",
+    "implementer": "ਲਾਗੂ ਕਰਨ ਵਾਲਾ",
+    "reviewer": "ਸਮੀਖਿਅਕ",
+    "fixer": "ਸੁਧਾਰਕ",
+    "researcher": "ਖੋਜਕਾਰ",
+    "custom": "ਕਸਟਮ",
+    "client": "ਕਲਾਇੰਟ",
+    "server": "ਸਰਵਰ",
+    "workspace": "ਕਾਰਜ ਖੇਤਰ",
+    "help": "ਭੂਮਿਕਾਵਾਂ ਨੂੰ ਮੌਜੂਦਾ ਕੰਬੋ ਨਾਲ ਜੋੜੋ। ਆਪਣੇ ਕਲਾਇੰਟ ਦੇ ਟੂਲਾਂ ਲਈ ਏਜੰਟ ਨਿਰਯਾਤ ਕਰੋ।"
+  }
 }

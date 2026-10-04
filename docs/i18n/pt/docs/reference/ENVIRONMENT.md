@@ -1739,3 +1739,9 @@ Utilizado por `open-sse/services/combo.ts` e `src/lib/quota/quotaScheduler.ts` p
 | Variável                        | Predefinição | Ficheiro de origem           | Descrição                                                                                                                                                                                                                                                                       |
 | ------------------------------- | ------------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OMNIROUTE_QUOTA_AWARE_ROUTING` | `0`          | `open-sse/services/combo.ts` | Quando definida como `1`, ignora ligações cujo orçamento de tokens por janela (`rateLimitOverrides.tpm`, tabela `provider_quota_state`) não consegue suportar o custo estimado do pedido antes do envio. Prossegue em caso de falha quando não existe um orçamento configurado. |
+
+### Agentes
+
+`AGENT_PROFILES_ENABLED=false`. Associe funções às combinações existentes. Exporte agentes para as ferramentas do seu cliente.
+
+[agent/<slug>](../../../../routing/AGENT_PROFILES.md)
