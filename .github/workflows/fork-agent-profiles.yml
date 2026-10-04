@@ -64,6 +64,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm rebuild better-sqlite3
+      - name: Initialize the locked alternate runtime binary
+        run: node node_modules/bun/install.js
       - name: Canonical Node suites, including dashboard and serial tests
         run: npm run test:unit:ci:shard
         env:
